@@ -22,3 +22,12 @@
 2012-04-06 11:28:07 | DEBUG | [Form::__construct] | action set to index.php
 2012-04-06 11:28:07 | DEBUG | [Form::toString()] | leaving toString, action set to index.php
 2012-04-06 11:28:07 | DEBUG | [index.php::buildPage()] | have just echoed form
+2012-04-06 11:31:34 | DEBUG | [Form::__construct] | action set to index.php
+2012-04-06 11:31:34 | DEBUG | [Form::toString()] | leaving toString, action set to index.php
+2012-04-06 11:31:34 | DEBUG | [index.php::buildPage()] | have just echoed form
+2012-04-06 11:32:43 | DEBUG | [Form::__construct] | action set to index.php
+2012-04-06 11:32:43 | DEBUG | [Form::toString()] | leaving toString, action set to index.php
+2012-04-06 11:32:43 | DEBUG | [index.php::buildPage()] | have just echoed form
+2012-04-06 11:33:17 | DEBUG | [Form::__construct] | action set to index.php
+2012-04-06 11:33:17 | DEBUG | [Form::toString()] | leaving toString, action set to index.php
+2012-04-06 11:33:17 | DEBUG | [index.php::buildPage()] | have just echoed form

@@ -30,6 +30,13 @@ class Form{
 				),
 				array(
 				"type"=>"text",
+				"name"=>"description",
+				"value"=>"Description (optional)...",
+				"maxlength"=>"16",
+				"size"=>"16"
+				),
+				array(
+				"type"=>"text",
 				"name"=>"store",
 				"value"=>"Store...",
 				"maxlength"=>"16",
@@ -43,21 +50,14 @@ class Form{
 				"size"=>"16"
 				),
 				array(
-				"type"=>"text",
-				"name"=>"description",
-				"value"=>"Description (optional)...",
-				"maxlength"=>"16",
-				"size"=>"16"
-				),
-				array(
-				"type"=>"text",
+				"type"=>"hidden",
 				"name"=>"date-added",
 				"value"=>$now["date"],
 				"maxlength"=>"10",
 				"size"=>"10"
 				),
 				array(
-				"type"=>"text",
+				"type"=>"hidden",
 				"name"=>"time-added",
 				"value"=>$now["time"],
 				"maxlength"=>"10",
@@ -98,11 +98,11 @@ class Form{
 
 		foreach($this->inputs as $item){
 
-			$form.="<li>";
+			$form.=$item['type']=="hidden" ? "" : "<li>";
 
 			$form.="<input type=\"{$item['type']}\" name=\"{$item['name']}\" value=\"{$item['value']}\" maxlength=\"{$item['maxlength']}\" size=\"{$item['size']}\" onfocus=\"if(this.value==this.defaultValue)this.value='';\" onblur=\"if(this.value=='')this.value=this.defaultValue;\">";
 
-			$form.="</li>";
+			$form.=$item['type']=="hidden" ? "" : "</li>";
 		}
 
 		$form.="</form>";
