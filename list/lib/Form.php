@@ -1,108 +1,114 @@
 <?php
 require_once('config.php');
+
 class Form{
 
-	public $date = strftime("%m/%d/%g",time());
-
-
 	public $inputs = array();
-
-	public function __contruct(){
+	public $action;
+	
+	function __construct($action){
+		global $logger;
 		$now=time();
 		$now = array(
 			'date'=>strftime("%m/%d/%g",$now),
 			'time'=>strftime("%H:%M",$now)
 		);
-		init($now);
+		$this->action = $action;
+		$logger->log(0,"Form::__construct", "action set to ".$this->action);
+		$this->init($now);
 
 	}
 
 	private function init($now){
-		$inputs=array(
-			array(
+		$this->inputs=array(
+		array(
 				"type"=>"text",
-				"name"=>"title",
-				"value"=>"Title...",
+				"name"=>"item",
+				"value"=>"Item...",
 				"maxlength"=>"16",
-				"size"=>"16",
-				"onfocus"=>null
-			),
-			array(
+				"size"=>"16"
+				),
+				array(
+				"type"=>"text",
+				"name"=>"store",
+				"value"=>"Store...",
+				"maxlength"=>"16",
+				"size"=>"16"
+				),
+				array(
+				"type"=>"text",
+				"name"=>"shopper",
+				"value"=>"shopper",
+				"maxlength"=>"16",
+				"size"=>"16"
+				),
+				array(
 				"type"=>"text",
 				"name"=>"description",
-				"value"=>"Description...",
+				"value"=>"Description (optional)...",
 				"maxlength"=>"16",
-				"size"=>"16",
-				"onfocus"=>null
-			),
-			array(
+				"size"=>"16"
+				),
+				array(
 				"type"=>"text",
-				"name"=>"date",
+				"name"=>"date-added",
 				"value"=>$now["date"],
 				"maxlength"=>"10",
-				"size"=>"10",
-				"onfocus"=>null
-			),
-			array(
+				"size"=>"10"
+				),
+				array(
 				"type"=>"text",
-				"name"=>"time",
+				"name"=>"time-added",
 				"value"=>$now["time"],
 				"maxlength"=>"10",
-				"size"=>"10",
-				"onfocus"=>null
-			)
-		);
+				"size"=>"10"
+				),
+				array(
+				"type"=>"text",
+				"name"=>"date-needed",
+				"value"=>$now["date"],
+				"maxlength"=>"10",
+				"size"=>"10"
+				),
+				array(
+				"type"=>"text",
+				"name"=>"time-needed",
+				"value"=>$now["time"],
+				"maxlength"=>"10",
+				"size"=>"10"
+				),
+				array(
+				"type"=>"submit",
+				"name"=>"submit",
+				"value"=>"Submit",
+				"maxlength"=>"nul",
+				"size"=>"null"
+				)
+				);
+//				echo print_r($this->inputs);
 	}
 
-	public static function toString($counter, $action){
+	public function toString(){
+		global $logger;
+		$form="";
 
-
-		$form.="<form method=\"post\" action=\"{$action}\">";
+		$form.="<form method=\"post\" action=\"{$this->action}\">";
 
 		$form.="<ul>";
 
-		$form.="<li>";
+		foreach($this->inputs as $item){
 
-		$form.="<input type=\"text\" name=\"title\" value=\"Title...\" maxlength=\"16\" size=\"16\" onfocus=\"if(this.value==this.defaultValue)this.value='';\" onblur=\"if(this.value=='')this.value=this.defaultValue;\">";
+			$form.="<li>";
 
-		$form.="</li>";
+			$form.="<input type=\"{$item['type']}\" name=\"{$item['name']}\" value=\"{$item['value']}\" maxlength=\"{$item['maxlength']}\" size=\"{$item['size']}\" onfocus=\"if(this.value==this.defaultValue)this.value='';\" onblur=\"if(this.value=='')this.value=this.defaultValue;\">";
 
-		$form.="<li>";
-		$form.="<input type=\"text\" name=\"description\" value=\"Description...\" onfocus=\"if(this.value==this.defaultValue)this.value='';\" onblur=\"if(this.value=='')this.value=this.defaultValue;\">";
-		$form.="</li>";
-
-		$form.="<li>";
-		$now = time();
-		$date = strftime("%m/%d/%g",$now);
-		$time = strftime("%H:%M",$now);
-		$form.="Due <input type=\"date\" name=\"date\" size=\"10\" maxlength=\"10\" value=\"{$date}\" onfocus=\"if(this.value==this.defaultValue)this.value='';\" onblur=\"if(this.value=='')this.value=this.defaultValue;\">";
-		$form.="<input type=\"text\" name=\"time\" size=\"8\" maxlength=\"8\" value=\"{$time}\" onfocus=\"if(this.value==this.defaultValue)this.value='';\" onblur=\"if(this.value=='')this.value=this.defaultValue;\">";
-		$form.="</li>";
-
-		$form.="<li>";
-		$form.="<input type=\"text\" name=\"hours\" value=\"Duration HH\" size=\"10\" maxlength=\"3\" onfocus=\"if(this.value==this.defaultValue)this.value='';\" onblur=\"if(this.value=='')this.value=this.defaultValue;\">";
-		$form.="<input type=\"text\" name=\"minutes\" size=\"10\" maxlength=\"3\"  value=\"Duration MM\" onfocus=\"if(this.value==this.defaultValue)this.value='';\" onblur=\"if(this.value=='')this.value=this.defaultValue;\">";
-		$form.="</li>";
-
-		$form.="<br/>";
-
-		$form.="<li>";
-
-		$form.="<input type=\"hidden\" name=\"counter\" value=\"{$counter}\"/>";
-		$form.="<input type=\"submit\" name=\"increment\" value=\"Next Task\">";
-		$form.="<input type=\"submit\" name=\"submit\" value=\"submit\">";
-
-		$form.="</li>";
-
-		$form.="</ul>";
+			$form.="</li>";
+		}
 
 		$form.="</form>";
-
-		//debug file contents
-		//		$form.="<textarea rows=\"20\" cols=\"30\" readonly=\"readonly\">".File::readFromFile(YAML)."</textarea>";
-
-		$form.="</section>";
-
+		
+		$logger->log(0,"Form::toString()", "leaving toString, action set to ".$this->action);
+		
 		return $form;
 	}
 }
