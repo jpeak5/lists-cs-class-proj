@@ -36,9 +36,9 @@ class Form{
 			$form.="<input ";
 			$isDatetime = null;
 			foreach($input as $property=>$value){
-				if($property=='type'&& ($value == 'date'||$value=='time')){
-					$isDatetime = $value;
-				}
+
+				
+				
 				//handle cases where the input field is a datetime field
 				$logger->log(0,"Form::toString()", "property = {$property}, value =".$value);
 				if($property == 'placeholder' && ((array_key_exists('type', $input)) && ($input->type=="date" || $input->type=="time"||$input->type=="hidden"))){
@@ -54,7 +54,9 @@ class Form{
 						}
 					}
 					$logger->log(0,"Form::toString()", "setting attribute {$property} to ".$value);
-				}
+				}//end handle date-time cases
+				
+				
 					
 				$form.= !empty($value)  ? $property."=\"".$value."\" " :"";
 				//			$form.="onfocus=\"if(this.value==this.defaultValue)this.value='';\" onblur=\"if(this.value=='')this.value=this.defaultValue;\"";
