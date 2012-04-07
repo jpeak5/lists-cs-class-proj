@@ -27,7 +27,7 @@ class R {
 
 						$in->{$property->getName()}=$input[$property->getName()];
 
-						$logger->log(0,"instantiateFromYAML","adding property - ".$property->getName().":   ".$input[$property->getName()]);
+//						$logger->log(0,"instantiateFromYAML","adding property - ".$property->getName().":   ".$input[$property->getName()]);
 					}
 				}
 				$objects[]=$in;

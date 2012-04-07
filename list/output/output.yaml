@@ -1,0 +1,99 @@
+---
+shopping:
+  item: motivation
+  store: walmart
+  description:
+  price-estimate: 5
+  shopper: jpeak5
+  date-needed:
+  time-needed:
+  date-added:
+  time-added:
+---
+shopping:
+  item: music
+  store: whole foods
+  description:
+  price-estimate: 9
+  shopper:
+  date-needed:
+  time-needed:
+  date-added:
+  time-added:
+---
+shopping:
+  item: 3 hours
+  store: whole foods
+  description:
+  price-estimate: 9
+  shopper: jpek5
+  date-needed:
+  time-needed:
+  date-added:
+  time-added:
+---
+shopping:
+  item: 2 hours
+  store: walmart
+  description:
+  price-estimate: 8
+  shopper:
+  date-needed:
+  time-needed:
+  date-added:
+  time-added:
+0:
+  shopping:
+    item: 3 hours
+    store: whole foods
+    description:
+    price-estimate: 9
+    shopper: jpek5
+    date-needed:
+    time-needed:
+    date-added:
+    time-added:
+---
+shopping:
+  item: rucky
+  store: pet store
+  description:
+  price-estimate: 4
+  shopper: jpeak5
+  date-needed:
+  time-needed:
+  date-added:
+  time-added:
+---
+shopping:
+  item: rucky
+  store: pet store
+  description:
+  price-estimate: 4
+  shopper: jpeak5
+  date-needed:
+  time-needed:
+  date-added:
+  time-added:
+0:
+  shopping:
+    item: 3 hours
+    store: whole foods
+    description:
+    price-estimate: 9
+    shopper: jpek5
+    date-needed:
+    time-needed:
+    date-added:
+    time-added:
+1:
+  shopping:
+    item: flopsie
+    store: pet store
+    description: 6
+    price-estimate:
+    shopper: jpeak5
+    date-needed:
+    time-needed:
+    date-added:
+    time-added:

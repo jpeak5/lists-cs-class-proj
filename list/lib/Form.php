@@ -6,8 +6,9 @@ class Form{
 	public $inputs = array();
 	public $action;
 	public $now = array();
-
-	function __construct($action, $inputFile){
+	public $formid;
+	
+	function __construct($action, $inputFile, $id){
 		//add another param, inputFile.yaml in order to abstract this that much further...same class can be used for other types of forms
 		global $logger;
 		$this->now=time();
@@ -15,7 +16,9 @@ class Form{
 			'date'=>strftime("%m/%d/%g",$this->now),
 			'time'=>strftime("%H:%M",$this->now)
 		);
+		
 		$this->action = $action;
+		$this->formid = $id;
 		$logger->log(0,"Form::__construct", "action set to ".$this->action);
 		$this->inputs=R::instantiateFromYAML("Input", $inputFile);
 		//		print_r($this->inputs);
@@ -27,9 +30,10 @@ class Form{
 		global $logger;
 		$form="";
 
-		$form.="<form method=\"post\" action=\"{$this->action}\">";
+		$form.="<form method=\"post\" action=\"{$this->action}\" id=\"{$this->formid}\">";
 
 		$form.="<ul>";
+		$form.="<input type=\"hidden\" name=\"formid\" value=\"{$this->formid}\"/>";
 
 		foreach($this->inputs as $input){
 			//			$form.= "<li>";
@@ -40,12 +44,14 @@ class Form{
 				
 				
 				//handle cases where the input field is a datetime field
-				$logger->log(0,"Form::toString()", "property = {$property}, value =".$value);
-				if($property == 'placeholder' && ((array_key_exists('type', $input)) && ($input->type=="date" || $input->type=="time"||$input->type=="hidden"))){
+//				$logger->log(0,"Form::toString()", "property = {$property}, value =".$value);
+				if($property == 'placeholder' && ((array_key_exists('type', $input)) && ($input->type=="date" || $input->type=="time"||$input->type=="datetime"||$input->type=="hidden"))){
 					if($input->type=="date"){
 						$value = $this->now['date'];
 					}elseif($input->type=="time"){
 						$value = $this->now['time'];
+					}elseif($input->type=="datetime"){
+						$value = $this->now['date']." @ ".$this->now['time'];
 					}else{
 						if($value == 'date'){
 							$value = $this->now['date'];
@@ -65,7 +71,6 @@ class Form{
 			//			$form.= "</li>";
 
 		}
-
 		$form.="</form>";
 
 		$logger->log(0,"Form::toString()", "leaving toString, action set to ".$this->action);

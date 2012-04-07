@@ -2,6 +2,12 @@
 require_once("config.php");
 require_once(SPYC);
 
+
+if(isset($_POST['submit'])){
+	SubmitHandler::process($_POST);
+}
+
+
 $now=time();
 $now = array(
 			'date'=>strftime("%m/%d/%g",$now),
@@ -11,7 +17,7 @@ $now = array(
 function buildPage(){
 	global $logger;
 	$formInput = FORMS_PATH.DS."formInput.yaml";
-	$form = new Form("index.php", $formInput);
+	$form = new Form("index.php", $formInput, "shopping");
 	echo $form->toString();
 	$logger->log(0,"index.php::buildPage()", "presenting form defined in {$formInput}");
 

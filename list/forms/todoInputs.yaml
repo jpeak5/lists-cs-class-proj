@@ -9,43 +9,30 @@ inputs:
 -
    input:
       maxlength: 16
+      name: who
+      size: 16
+      type: text
+      placeholder: Who?
+-
+   input:
+      maxlength: 16
       name: description
       size: 16
       type: text
       placeholder: Description (optional)...
 -
    input:
-      maxlength: 6
-      name: duration-hours-estimate
+      name: deadline
       size: 16
-      type: text
-      placeholder: Duration Estimate (hh)
--
-   input:
-      maxlength: 6
-      name: duration-minutes-estimate
-      size: 16
-      type: text
-      placeholder: Duration Estimate (mm)
--
-   input:
-      name: when-date
-      size: 16
-      type: date
+      type: datetime
       placeholder: Date
 -
    input:
-      name: when-time
-      size: 16
-      type: time
-      placeholder: Time
--
-   input:
-      maxlength: 16
-      name: who
+      maxlength: 6
+      name: duration-estimate
       size: 16
       type: text
-      placeholder: Who?
+      placeholder: Duration (hours)
 -
    input:
       maxlength: 10

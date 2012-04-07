@@ -22,5 +22,6 @@ require_once(LIB_PATH.DS."Logger.php");
 require_once(LIB_PATH.DS."Form.php");
 require_once(LIB_PATH.DS."Input.php");
 require_once(LIB_PATH.DS."R.php");
+require_once(LIB_PATH.DS."SubmitHandler.php");
 
 //output folder needs to be writable by the web server!!!!!
