@@ -5,33 +5,26 @@ class SubmitHandler {
 
 	public static function process($post){
 		global $logger;
-		if(isset($post['formid'])){
+		if(isset($post['formid'])&&isset($post['submit'])){
 			$logger->log(0, "SubmitHandler::process()", "Processing new {$post['formid']} form...");
 			
+			$type = $post['formid'];
+			unset($post['formid']);
+			unset($post['submit']);
 		}
 		
-		//get rid of the submit handler
-		//this is actually not necessary, since the objects which we will be creating from this will just ignor the weird stuff...
-		if(end($post)=="Submit Query"){
-			$logger->log(0, "SubmitHandler::process()", "\$last item in \$post array is ".array_pop($post));
+		$currentYAML = Spyc::YAMLLoad("output".DS."output.yaml");
+		
+		if(!array_key_exists(YAML_ROOT, $currentYAML)){
+			$currentYAML = array(YAML_ROOT=>array());
 		}
-		$fileContents = Spyc::YAMLLoad("output".DS."output.yaml");
-		
-		print_r($fileContents);
-		
-		$type = $post['formid'];
-		unset($post['formid']);
-		
-		$output[$type]=$post;
 
-		array_push($fileContents, $output);
-		echo "<hr/>";
-		print_r($fileContents);
-		
-		$fileContents = Spyc::YAMLDump($fileContents, false, false); 
+		$currentYAML[YAML_ROOT][$type][] = $post;
 
-		if($handle = fopen(OUTPUT_PATH.DS."output.yaml", "a+")){
-			fwrite($handle, $fileContents);
+		$newYAML = Spyc::YAMLDump($currentYAML, false, false);
+
+		if($handle = fopen(OUTPUT_PATH.DS."output.yaml", "w")){
+			fwrite($handle, $newYAML);
 			fclose($handle);
 			return true;
 		}else{
