@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <script type="text/javascript" src="lib/js/util.js">
+        </script>
+        <script src="http://code.jquery.com/jquery-latest.js">
+        </script></head>
+        <body>
+        	<script>console.log("beginning the body")</script>
+            <button type="button" onclick="toggleForm()">
+                Display Date
+            </button>
+            <form action="/" id="searchForm">
+                <ul>
+                <input type="hidden" name="formid" value="shopping"/>
+				<input autocomplete="1" maxlength="16" name="item" placeholder="Item..." size="16" type="text" />
+                <br/>
+                <input autocomplete="1" maxlength="16" name="store" placeholder="Store..." size="16" type="text" />
+                <br/>
+                <input autocomplete="1" maxlength="16" name="description" placeholder="Description (optional)..." size="16" type="text" />
+                <br/>
+                <input autocomplete="1" maxlength="6" name="price-estimate" placeholder="Price Estimate" size="16" type="text" />
+                <br/>
+                <input autocomplete="1" maxlength="16" name="shopper" placeholder="shopper" size="16" type="text" />
+                <br/>
+                <input autocomplete="1" maxlength="10" name="date-needed" placeholder="04/07/12" size="10" type="date" />
+                <br/>
+                <input autocomplete="1" maxlength="10" name="time-needed" placeholder="12:59" size="10" type="time" />
+                <br/>
+                <input autocomplete="1" maxlength="10" name="date-added" placeholder="12:59" size="10" type="hidden" />
+                <br/>
+                <input autocomplete="1" maxlength="10" name="time-added" placeholder="12:59" size="10" type="hidden" />
+                <br/>
+                <input name="submit" placeholder="Submit" type="submit" />
+                <br/>
+            </form>
+            <textarea rows="20" cols="40">
+                ---
+                DEVOIRS:
+                shopping: 
+                - 
+                item: flossie
+                store: pet
+                description:
+                price-estimate: 7
+                shopper: jpeak5
+                date-needed:
+                time-needed:
+                date-added:
+                time-added: 
+                - 
+                item: pecan
+                store: pet store
+                description:
+                price-estimate: 6
+                shopper: jpeak5
+                date-needed:
+                time-needed:
+                date-added:
+                time-added:
+            </textarea>
+			<script>
+  /* attach a submit handler to the form */
+  $("#searchForm").submit(function(event) {
+  	console.log("beginning the script");
+
+    /* stop form from submitting normally */
+    event.preventDefault(); 
+        
+    /* get some values from elements on the page: */
+    var $form = $( this ),
+        term = $form.find( 'input[name="item"]' ).val(),
+        url = "form.php";
+		console.log("hello log?");
+
+    /* Send the data using post and put the results in a div */
+    $.post( url, { form: term },
+      function( data ) {
+          var content = $( data );
+          $( "#result" ).empty().html( content );
+      }
+    );
+  });
+</script>
+<div id="result"></div>
+            <body/>
+            </html>
