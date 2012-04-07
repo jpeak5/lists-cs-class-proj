@@ -9,6 +9,7 @@ class R {
 		$objects = array();
 		
 		foreach($yaml as $inputs){
+//			print_r($inputs);
 			foreach($inputs as $input){
 				$logger->log(0,"instantiateFromYAML","creating new instance of {$class}");
 

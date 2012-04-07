@@ -10,7 +10,7 @@ $now = array(
 
 function buildPage(){
 	global $logger;
-	$formInput = "formInput.yaml";
+	$formInput = FORMS_PATH.DS."formInput.yaml";
 	$form = new Form("index.php", $formInput);
 	echo $form->toString();
 	$logger->log(0,"index.php::buildPage()", "presenting form defined in {$formInput}");

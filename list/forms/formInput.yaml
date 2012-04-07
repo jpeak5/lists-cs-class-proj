@@ -5,69 +5,69 @@ inputs:
       name: item
       size: 16
       type: text
-      value: Item...
--
-   input:
-      maxlength: 16
-      name: description
-      size: 16
-      type: text
-      value: Description (optional)...
--
-   input:
-      maxlength: 6
-      name: price-estimate
-      size: 16
-      type: text
-      value: Price Estimate
+      placeholder: Item...
 -
    input:
       maxlength: 16
       name: store
       size: 16
       type: text
-      value: Store...
+      placeholder: Store...
+-
+   input:
+      maxlength: 16
+      name: description
+      size: 16
+      type: text
+      placeholder: Description (optional)...
+-
+   input:
+      maxlength: 6
+      name: price-estimate
+      size: 16
+      type: text
+      placeholder: Price Estimate
 -
    input:
       maxlength: 16
       name: shopper
       size: 16
       type: text
-      value: shopper
+      placeholder: shopper
+-
+   input:
+      maxlength: 10
+      name: date-needed
+      size: 10
+      type: date
+      placeholder: 04/06/12
+-
+   input:
+      maxlength: 10
+      name: time-needed
+      size: 10
+      type: time
+      placeholder: 12:36
 -
    input:
       maxlength: 10
       name: date-added
       size: 10
       type: hidden
-      value: 04/06/12
+      placeholder: 04/06/12
 -
    input:
       maxlength: 10
       name: time-added
       size: 10
       type: hidden
-      value: 12:36
--
-   input:
-      maxlength: 10
-      name: date-needed
-      size: 10
-      type: text
-      value: 04/06/12
--
-   input:
-      maxlength: 10
-      name: time-needed
-      size: 10
-      type: text
-      value: 12:36
+      placeholder: 12:36
 -
    input:
       name: submit
       size: null
       type: submit
-      value: Submit
+      placeholder: Submit
 -
 
 #   input:  

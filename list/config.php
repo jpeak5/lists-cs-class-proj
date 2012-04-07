@@ -5,6 +5,7 @@ defined('DS') ? null : define('DS', DIRECTORY_SEPARATOR);
 defined('SITE_ROOT') ? null : define('SITE_ROOT', DS.'Users'.DS.'jpeak5'.DS.'Sites'.DS.'shopList'.DS.'list');
 defined('LIB_PATH') ? null : define('LIB_PATH', SITE_ROOT.DS.'lib');
 defined('OUTPUT_PATH') ? null : define('OUTPUT_PATH', SITE_ROOT.DS.'output');
+defined('FORMS_PATH') ? null : define('FORMS_PATH', SITE_ROOT.DS.'forms');
 //defined('CSS_PATH') ? null : define('CSS_PATH', SITE_ROOT.DS.'css');
 defined('YAML') ? null : define('YAML', OUTPUT_PATH.DS.'output.yaml');
 defined('LOG_FILE') ? null : define('LOG_FILE', OUTPUT_PATH.DS.'log.txt');
