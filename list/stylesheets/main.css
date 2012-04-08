@@ -55,7 +55,9 @@ p {
 	width: 40%;
 	padding-right: 22px;
 }
-#content ul{
+#content .heading{
+		display:block;
+		padding:2 5 2 5;
 		background: #CCCCCC;
 	}
 ul {

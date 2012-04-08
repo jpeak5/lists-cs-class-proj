@@ -88,7 +88,7 @@ foreach($shoppingList as $store=>$items){
 //	echo "\$store";
 //	krumo($store);
 	
-	$list.="<strong>".$store."</strong><ul>";
+	$list.="<span class=\"heading\"><strong>".$store."</strong></span><ul>";
 	foreach($items as $item){
 		$list.="<li>{$item["item"]}</li>";
 	}
@@ -108,7 +108,7 @@ foreach($todoList as $doer=>$todos){
 //	echo "\$store";
 //	krumo($store);
 	
-	$list.="<strong>".$doer."</strong><ul>";
+	$list.="<span class=\"heading\"><strong>".$doer."</strong></span><ul>";
 	foreach($todos as $todo){
 		$list.="<li>{$todo["todo"]}</li>";
 	}
