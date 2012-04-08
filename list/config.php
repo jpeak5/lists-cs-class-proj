@@ -25,5 +25,7 @@ require_once(LIB_PATH.DS."Form.php");
 require_once(LIB_PATH.DS."Input.php");
 require_once(LIB_PATH.DS."R.php");
 require_once(LIB_PATH.DS."SubmitHandler.php");
+require_once(LIB_PATH.DS."Lists.php");
+require_once(LIB_PATH.DS."krumo".DS."class.krumo.php");
 
 //output folder needs to be writable by the web server!!!!!

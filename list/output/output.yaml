@@ -1,172 +1,49 @@
 ---
 DEVOIRS:
+  todo:
+    - 
+      todo: testing
+      who: jason
+      description: clear out bugs
+      deadline:
+      duration-estimate: 1
+      date-added:
+      time-added:
+    - 
+      todo:
+      who:
+      description:
+      deadline:
+      duration-estimate:
+      date-added:
+      time-added:
   shopping:
     - 
-      item: flossie
-      store: pet
+      item: cabbage
+      store: whole foods
       description:
-      price-estimate: 7
+      price-estimate: 2
       shopper: jpeak5
       date-needed:
       time-needed:
       date-added:
       time-added:
     - 
-      item: pecan
+      item: greens
+      store: whole foods
+      description:
+      price-estimate: 5
+      shopper: jpeak5
+      date-needed:
+      time-needed:
+      date-added:
+      time-added:
+    - 
+      item: flossie
       store: pet store
       description:
-      price-estimate: 6
+      price-estimate: 8
       shopper: jpeak5
-      date-needed:
-      time-needed:
-      date-added:
-      time-added:
-    - 
-      item: test
-      store:
-      description:
-      price-estimate:
-      shopper:
-      date-needed:
-      time-needed:
-      date-added:
-      time-added:
-    - 
-      item: test
-      store:
-      description:
-      price-estimate:
-      shopper:
-      date-needed:
-      time-needed:
-      date-added:
-      time-added:
-    - 
-      item:
-      store:
-      description:
-      price-estimate:
-      shopper:
-      date-needed:
-      time-needed:
-      date-added:
-      time-added:
-    - 
-      item: test
-      store:
-      description:
-      price-estimate:
-      shopper:
-      date-needed:
-      time-needed:
-      date-added:
-      time-added:
-    - 
-      item:
-      store:
-      description:
-      price-estimate:
-      shopper:
-      date-needed:
-      time-needed:
-      date-added:
-      time-added:
-    - 
-      item:
-      store:
-      description:
-      price-estimate:
-      shopper:
-      date-needed:
-      time-needed:
-      date-added:
-      time-added:
-    - 
-      item:
-      store:
-      description:
-      price-estimate:
-      shopper:
-      date-needed:
-      time-needed:
-      date-added:
-      time-added:
-    - 
-      item:
-      store:
-      description:
-      price-estimate:
-      shopper:
-      date-needed:
-      time-needed:
-      date-added:
-      time-added:
-    - 
-      item:
-      store:
-      description:
-      price-estimate:
-      shopper:
-      date-needed:
-      time-needed:
-      date-added:
-      time-added:
-    - 
-      item:
-      store:
-      description:
-      price-estimate:
-      shopper:
-      date-needed:
-      time-needed:
-      date-added:
-      time-added:
-    - 
-      item:
-      store:
-      description:
-      price-estimate:
-      shopper:
-      date-needed:
-      time-needed:
-      date-added:
-      time-added:
-    - 
-      item:
-      store:
-      description:
-      price-estimate:
-      shopper:
-      date-needed:
-      time-needed:
-      date-added:
-      time-added:
-    - 
-      item:
-      store:
-      description:
-      price-estimate:
-      shopper:
-      date-needed:
-      time-needed:
-      date-added:
-      time-added:
-    - 
-      item:
-      store:
-      description:
-      price-estimate:
-      shopper:
-      date-needed:
-      time-needed:
-      date-added:
-      time-added:
-    - 
-      item:
-      store:
-      description:
-      price-estimate:
-      shopper:
       date-needed:
       time-needed:
       date-added:

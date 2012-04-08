@@ -17,7 +17,7 @@ if(isset($_POST['form'])){
 
 	$page=$form->toString();
 	echo $page;
-	$logger->log(0,"index.php::buildPage()", "presenting form defined in {$formInput}");
+	$logger->log(0,"form.php", "presenting form defined in {$formInput}");
 
 }else{
 	$logger->log(0,"form.php", "\$post is not set, redirecting to index.php");
