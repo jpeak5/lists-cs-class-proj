@@ -33,6 +33,54 @@ DEVOIRS:
       duration-estimate: 2
       date-added:
       time-added:
+    - 
+      todo: Waggenspack prep
+      who: jason
+      description: Think
+      deadline: 2012-04-08T15:43:30Z
+      duration-estimate:
+      date-added:
+      time-added:
+    - 
+      todo: Reprogram thermo
+      who: both
+      description: Too hot am wknds
+      deadline: 2012-04-08T12:06:38.142Z
+      duration-estimate:
+      date-added:
+      time-added:
+    - 
+      todo: plant things????
+      who: melanie
+      description: seeds
+      deadline: 2012-04-08T20:50:40Z
+      duration-estimate: 15 min
+      date-added:
+      time-added:
+    - 
+      todo: Pay bills
+      who: both
+      description:
+      deadline: 2012-04-08T13:59:52.043Z
+      duration-estimate: 0.75
+      date-added:
+      time-added:
+    - 
+      todo: Clean fridge
+      who: jason
+      description:
+      deadline: 2012-04-08T14:00:25.604Z
+      duration-estimate: 1
+      date-added:
+      time-added:
+    - 
+      todo: lunch
+      who: both
+      description: eat food
+      deadline: 2012-04-08T18:35:21Z
+      duration-estimate: 30 min
+      date-added:
+      time-added:
   shopping:
     - 
       item: greens
@@ -70,5 +118,23 @@ DEVOIRS:
       price-estimate: 4
       shopper: melanie
       datetime-needed:
+      date-added:
+      time-added:
+    - 
+      item: jazz pants
+      store: walmart
+      description: pants
+      price-estimate: 8.00
+      shopper: melanie
+      datetime-needed: 2012-04-08T17:44:34Z
+      date-added:
+      time-added:
+    - 
+      item: 'beer 10 & box'
+      store: 'mathernes '
+      description: beer
+      price-estimate: 30
+      shopper: melanie
+      datetime-needed: 2012-04-08T19:51:58Z
       date-added:
       time-added:

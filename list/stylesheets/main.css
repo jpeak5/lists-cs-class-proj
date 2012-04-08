@@ -60,6 +60,11 @@ p {
 		padding:2 5 2 5;
 		background: #CCCCCC;
 	}
+#content .aggregate{
+	padding-left:5px;
+	color: #FF0000;
+	}
+	
 ul {
 	list-style: none;
 }

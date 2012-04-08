@@ -13,6 +13,16 @@ class SubmitHandler {
 			unset($post['submit']);
 		}
 		
+		//TODO:: there is  need for form-specific input handling/validation
+		//ie make certain fields UPPER, or check that dates don't collide
+		
+		if(isset($post['store'])){
+			$post['store'] = ucwords($post['store']);
+			$logger->log(0,"SubmitHandler::process()", "setting 'item' to UPPER" );
+		}if(isset($post['who'])){
+			$post['who'] = ucwords($post['who']);
+		}
+		
 		$currentYAML = Spyc::YAMLLoad("output".DS."output.yaml");
 		
 		if(!array_key_exists(YAML_ROOT, $currentYAML)){

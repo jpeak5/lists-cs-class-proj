@@ -87,12 +87,17 @@ $list.="<h3>Shopping</h3>";
 foreach($shoppingList as $store=>$items){
 //	echo "\$store";
 //	krumo($store);
-	
-	$list.="<span class=\"heading\"><strong>".$store."</strong></span><ul>";
+	$storeTotal = 0;
+	$listHead="";
+	$listHead.="<span class=\"heading\"><strong>".$store;
+	$listBody = "<ul>";
 	foreach($items as $item){
-		$list.="<li>{$item["item"]}</li>";
+		$listBody.="<li>{$item["item"]}</li>";
+		$storeTotal+=isset($item["price-estimate"]) ? $item["price-estimate"]: 0;
 	}
-	$list.="</ul>";
+	$listHead.="</strong><span class=\"aggregate\">&nbsp;&nbsp;(\$".$storeTotal.")</span></span>";
+	$listBody.="</ul>";
+	$list.=$listHead.$listBody;
 } 
 $list.="</div>";
 
@@ -108,7 +113,7 @@ foreach($todoList as $doer=>$todos){
 //	echo "\$store";
 //	krumo($store);
 	
-	$list.="<span class=\"heading\"><strong>".$doer."</strong></span><ul>";
+	$list.="<span class=\"heading\"><strong>".$doer."</strong></span>";
 	foreach($todos as $todo){
 		$list.="<li>{$todo["todo"]}</li>";
 	}
