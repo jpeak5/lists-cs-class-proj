@@ -79,23 +79,39 @@ $data.= "</textarea>";
 
 
 $shoppingList = Lists::parseGroceryList(Lists::getList("shopping"));
-echo "\$shoppingList\n";
-krumo($shoppingList);
-$list = "<div id=\"list\">";
-$i=0;
-foreach($shoppingList as $key=>$store){
-	echo "\$store";
-	krumo($store);
+//echo "\$shoppingList\n";
+//krumo($shoppingList);
+$list = "<div id=\"grocery_list\">";
+$list.="<h1>Shopping</h1><hr/>";
+
+foreach($shoppingList as $store=>$items){
+//	echo "\$store";
+//	krumo($store);
 	
-	$list.="<h2>".$key."</h2>";
-	foreach($store as $item){
+	$list.="<h2>".$store."</h2>";
+	foreach($items as $item){
 		$list.="<li>{$item["item"]}</li>";
 	}
 } 
 
+$todoList = Lists::parseTodoList(Lists::getList("todo"));
+$list.= "<div id=\"todo_list\">";
+$list.="<h1>TODOs</h1><hr/>";
+
+foreach($todoList as $doer=>$todos){
+//	echo "\$store";
+//	krumo($store);
+	
+	$list.="<h2>".$doer."</h2>";
+	foreach($todos as $todo){
+		$list.="<li>{$todo["todo"]}</li>";
+	}
+} 
+
+
 $page.=$list; 
 
-$page.=$data;
+//$page.=$data;
 
 
 

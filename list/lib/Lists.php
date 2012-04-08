@@ -17,28 +17,34 @@ class Lists {
 	public static function parseGroceryList($shopping_entries){
 		$stores=array();
 
-		echo "from Lists.php\n";
-		krumo($shopping_entries);
-		echo "<hr/>";
-		$i=0;
 		foreach($shopping_entries as $entry){
 			$storeName = $entry["store"];
-			echo "\$storeName = {$storeName}\n";
 			
 			if(empty($stores[$storeName])){
 				$stores[$storeName]=array();
-				echo "\$stores-loop[$i]\n";
-				krumo($stores);
-				$i++;
 			}
 				$stores[$storeName][]=$entry;
 
 
 		}
-		echo "\$stores\n";
-		krumo($stores);
-		echo "<hr/>";
+
 		return $stores;
+	}
+	
+	public static function parseTodoList($todo_entries){
+		$doers=array();
+
+
+		foreach($todo_entries as $entry){
+			$doerName = $entry["who"];
+		
+			if(empty($doers[$doerName])){
+				$doers[$doerName]=array();
+			}
+				$doers[$doerName][]=$entry;
+		}
+
+		return $doers;
 	}
 
 }

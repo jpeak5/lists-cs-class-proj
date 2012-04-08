@@ -48,3 +48,13 @@ DEVOIRS:
       time-needed:
       date-added:
       time-added:
+    - 
+      item: 'cat food '
+      store: pet store
+      description:
+      price-estimate: 15
+      shopper: jpeak5
+      date-needed:
+      time-needed:
+      date-added:
+      time-added:
