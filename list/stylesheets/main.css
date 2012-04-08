@@ -45,14 +45,14 @@ p {
 
 #content_left {
 	display: table-cell;
-	width: 40%;
+	width: 50%;
 	padding-right: 22px;
 
 }
 
 #content_right {
 	display: table-cell;
-	width: 40%;
+	width: 50%;
 	padding-right: 22px;
 }
 #content .heading{

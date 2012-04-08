@@ -1,100 +1,148 @@
 <html>
     <head>
-        <script type="text/javascript" src="lib/js/util.js">
-        </script>
         <script src="http://code.jquery.com/jquery-latest.js">
         </script>
+        <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
     </head>
     <body>
-        <script>
-            console.log("beginning the body")
-        </script>
-        <button id="toggle" class="shopping" type="button" >
-            TODOs
-        </button>
-		<div id="mutableForm">
-        <form action="/new_file.html">
-            <ul>
-            <input type="hidden" name="formid" value="shopping"/><input autocomplete="1" maxlength="16" name="item" placeholder="Item..." size="16" type="text" />
-            <br/>
-            <input autocomplete="1" maxlength="16" name="store" placeholder="Store..." size="16" type="text" />
-            <br/>
-            <input autocomplete="1" maxlength="16" name="description" placeholder="Description (optional)..." size="16" type="text" />
-            <br/>
-            <input autocomplete="1" maxlength="6" name="price-estimate" placeholder="Price Estimate" size="16" type="text" />
-            <br/>
-            <input autocomplete="1" maxlength="16" name="shopper" placeholder="shopper" size="16" type="text" />
-            <br/>
-            <input autocomplete="1" maxlength="10" name="date-needed" placeholder="04/07/12" size="10" type="date" />
-            <br/>
-            <input autocomplete="1" maxlength="10" name="time-needed" placeholder="12:59" size="10" type="time" />
-            <br/>
-            <input autocomplete="1" maxlength="10" name="date-added" placeholder="12:59" size="10" type="hidden" />
-            <br/>
-            <input autocomplete="1" maxlength="10" name="time-added" placeholder="12:59" size="10" type="hidden" />
-            <br/>
-            <input name="submit" placeholder="Submit" type="submit" />
-            <br/>
-        </form>
-		</div>
-        <textarea rows="20" cols="40">
-            ---
-            DEVOIRS: 
-            shopping: 
-            - 
-            item: flossie
-            store: pet
-            description:
-            price-estimate: 7
-            shopper: jpeak5
-            date-needed:
-            time-needed:
-            date-added: 
-            time-added: 
-            - 
-            item: pecan
-            store: pet store
-            description:
-            price-estimate: 6
-            shopper: jpeak5
-            date-needed:
-            time-needed:
-            date-added:
-            time-added:
-        </textarea>
-        <script>
-            /* attach a submit handler to the form */
-            $("#toggle").click(function(event){
-                console.log("beginning the script");
-                
-                /* stop form from submitting normally */
-                event.preventDefault();
-                
-                /* get some values from elements on the page: */
-                var $currentState = $(this), 
-				state = $currentState.attr("class"), 
-				url = "form.php";
-                console.log("currentState= "+$currentState.attr("class"));
-                
-                /* Send the data using post and put the results in a div */
-                $.post(url, {
-                    form: state
-                }, function(data){
-                    var content = $(data);
-                    $("#mutableForm").empty().html(content);
-					if($currentState.attr("class")=="shopping"){
-						$currentState.attr("class", "todo")
-						$currentState.html("TODOs")
-					}else{
-						$currentState.attr("class", "shopping")
-						$currentState.html("Shopping")
-					}
-					
+        <section id="intro">
+            <button id="toggle" class="shopping" type="button">
+                switch to TODOs
+            </button>
+            <div id="mutableForm">
+                <form method="post" action="index.php" id="shopping">
+                    <ul>
+                    <input type="hidden" name="formid" value="shopping"/>
+                    <br/>
+                    <input autocomplete="1" maxlength="16" name="item" placeholder="Item..." size="16" type="text" /><input autocomplete="1" maxlength="16" name="store" placeholder="Store..." size="16" type="text" /><input autocomplete="1" maxlength="16" name="description" placeholder="Description..." size="16" type="text" />
+                    <br/>
+                    <input autocomplete="1" maxlength="6" name="price-estimate" placeholder="Price Estimate" size="16" type="text" /><input autocomplete="1" maxlength="16" name="shopper" placeholder="shopper" size="16" type="text" /><input autocomplete="1" maxlength="10" name="datetime-needed" placeholder="04/08/12 @ 10:23" size="16" type="datetime" />
+                    <br/>
+                    <input autocomplete="1" maxlength="10" name="date-added" placeholder="10:23" size="10" type="hidden" /><input autocomplete="1" maxlength="10" name="time-added" placeholder="10:23" size="10" type="hidden" />
+                    <br/>
+                    <input autocomplete="1" name="submit" placeholder="Submit" type="submit" />
+                </form>
+            </div>
+            <script>
+                /* attach a submit handler to the form */
+                $("#toggle").click(function(event){
+                    console.log("beginning the script");/* stop form from submitting normally */
+                    event.preventDefault();/* get some values from elements on the page: */
+                    var $currentState = $(this), state = $currentState.attr("class"), url = "form.php";
+                    console.log("currentState= " + $currentState.attr("class"));/* Send the data using post and put the results in a div */
+                    $.post(url, {
+                        form: state
+                    }, function(data){
+                        var content = $(data);
+                        $("#mutableForm").empty().html(content);
+                        if ($currentState.attr("class") == "shopping") {
+                            $currentState.attr("class", "todo");
+                            $currentState.html("switch to TODOs");
+                        }
+                        else {
+                            $currentState.attr("class", "shopping");
+                            $currentState.html("switch to Shopping");
+                        }
+                    });
                 });
-				
-            });
-        </script>
-        <div id="result">
+            </script>
+        </section>
+        <div id="content">
+            <div id="content_left">
+                <div id="grocery_list">
+                    <h3>Shopping</h3>
+                    <span class="heading"><strong>whole foods</strong><span class="aggregate">&nbsp;&nbsp;($13)</span></span>
+                    <ul>
+                        <li class="clickme">
+                            <strong><span class="reveal">greens</strong>&nbsp;($5)</span>
+                        </li>
+                        <li>
+                            <strong>jason deodorant</strong>&nbsp;($4)
+                        </li>&nbsp;-patchouli
+                        <li>
+                            <strong>hummus</strong>&nbsp;($4)
+                        </li>
+                    </ul>
+					<script>
+						$(document).ready(function(){
+							$(.reveal).hide();
+						});
+						$('li.clickme').click(function() {
+      $('.reveal').show();
+    });
+					
+						</script>
+                    <span class="heading"><strong>walmart</strong><span class="aggregate">&nbsp;&nbsp;($12)</span></span>
+                    <ul>
+                        <li>
+                            <strong>bread</strong>&nbsp;($4)
+                        </li>
+                        <li>
+                            <strong>jazz pants</strong>&nbsp;($8.00)
+                        </li>&nbsp;-pants
+                    </ul>
+                    <span class="heading"><strong>mathernes </strong><span class="aggregate">&nbsp;&nbsp;($30)</span></span>
+                    <ul>
+                        <li>
+                            <strong>beer 10 & box</strong>&nbsp;($30)
+                        </li>&nbsp;-beer
+                    </ul>
+                </div>
+            </div>
+            <div id="content_right">
+                <div id="todo_list">
+                    <h3>TODOs</h3>
+                    <span class="heading"><strong>jason</strong><span class="workAggregate">&nbsp;&nbsp;(4)</span></span>
+                    <ul>
+                        <li>
+                            <strong>testing</strong>
+                            &nbsp;(1)
+                        </li>&nbsp;-clear out bugs
+                        <li>
+                            <strong>cut wood</strong>
+                            &nbsp;(2)
+                        </li>&nbsp;-cut and burn
+                        <li>
+                            <strong>Waggenspack prep</strong>
+                            &nbsp;()
+                        </li>&nbsp;-Think
+                        <li>
+                            <strong>Clean fridge</strong>
+                            &nbsp;(1)
+                        </li>
+                    </ul>
+                    <span class="heading"><strong>melanie</strong><span class="workAggregate">&nbsp;&nbsp;(17)</span></span>
+                    <ul>
+                        <li>
+                            <strong>closet cleanout</strong>
+                            &nbsp;(2)
+                        </li>&nbsp;-a massive affair
+                        <li>
+                            <strong>plant things????</strong>
+                            &nbsp;(15 min)
+                        </li>&nbsp;-seeds
+                    </ul>
+                    <span class="heading"><strong>both</strong><span class="workAggregate">&nbsp;&nbsp;(32.75)</span></span>
+                    <ul>
+                        <li>
+                            <strong>Laundry</strong>
+                            &nbsp;(2)
+                        </li>&nbsp;-2 loads + foldin
+                        <li>
+                            <strong>Reprogram thermo</strong>
+                            &nbsp;()
+                        </li>&nbsp;-Too hot am wknds
+                        <li>
+                            <strong>Pay bills</strong>
+                            &nbsp;(0.75)
+                        </li>
+                        <li>
+                            <strong>lunch</strong>
+                            &nbsp;(30 min)
+                        </li>&nbsp;-eat food
+                    </ul>
+                </div>
+            </div>
         </div>
         <body/>
         </html>

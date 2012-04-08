@@ -92,8 +92,11 @@ foreach($shoppingList as $store=>$items){
 	$listHead.="<span class=\"heading\"><strong>".$store;
 	$listBody = "<ul>";
 	foreach($items as $item){
-		$listBody.="<li>{$item["item"]}</li>";
+		$listBody.="<li class=\"litem\"><strong>{$item["item"]}</strong>&nbsp;(\${$item["price-estimate"]})";
+		$listBody.="<div class=\"deleteme\">&nbsp;<a href=\"delete.php?item=".urlencode($item["item"])."\">delete</a></div></li>";
 		$storeTotal+=isset($item["price-estimate"]) ? $item["price-estimate"]: 0;
+		$listBody.=(strlen($item["description"])>0)?"&nbsp;-".$item["description"]:"";
+		
 	}
 	$listHead.="</strong><span class=\"aggregate\">&nbsp;&nbsp;(\$".$storeTotal.")</span></span>";
 	$listBody.="</ul>";
@@ -113,11 +116,19 @@ foreach($todoList as $doer=>$todos){
 //	echo "\$store";
 //	krumo($store);
 	
-	$list.="<span class=\"heading\"><strong>".$doer."</strong></span>";
+	$doerTotal = 0;
+	$listHead="";
+	$listHead.="<span class=\"heading\"><strong>".$doer;
+	$listBody="<ul>";
 	foreach($todos as $todo){
-		$list.="<li>{$todo["todo"]}</li>";
+		$listBody.="<li><strong>{$todo["todo"]}</strong> &nbsp;({$todo["duration-estimate"]})</li>";
+		$listBody.="<div class=\"deleteme\">&nbsp;<a href=\"delete.php?todo=".urlencode($todo["todo"])."\">delete</a></div></li>";
+		$doerTotal+=isset($todo["duration-estimate"]) ? $todo["duration-estimate"]: 0;
+		$listBody.=(strlen($todo["description"])>0)?"&nbsp;-".$todo["description"]:"";
 	}
-	$list.="</ul>";
+	$listHead.="</strong><span class=\"workAggregate\">&nbsp;&nbsp;(".$doerTotal.")</span></span>";
+	$listBody.="</ul>";
+	$list.=$listHead.$listBody;
 } 
 $list.="</div>";
 

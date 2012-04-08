@@ -15,7 +15,7 @@ inputs:
       placeholder: Who?
 -
    input:
-      maxlength: 16
+      maxlength: 40
       name: description
       size: 16
       type: text
