@@ -18,24 +18,21 @@ $now = array(
 
 $header = "<html><head>";
 $header.="<script src=\"http://code.jquery.com/jquery-latest.js\"></script>";
+$header.="<link rel=\"stylesheet\" type=\"text/css\" href=\"stylesheets/main.css\">";
 $header.="</head>";
 $header.="<body>";
-
-
-
-$page = "";
-
 
 $formInput = FORMS_PATH.DS."formInput.yaml";
 $form = new Form("index.php", $formInput, "shopping");
 
-$toggle ="<button id=\"toggle\" class=\"shopping\" type=\"button\" >TODOs</button>";
 
 
-$page.=$toggle;
-$page.="<div id=\"mutableForm\">";
-$page.=$form->toString();
-$page.="</div>";
+$intro="<section id=\"intro\">";
+$intro ="<button id=\"toggle\" class=\"shopping\" type=\"button\" >switch to TODOs</button>";
+
+$intro.="<div id=\"mutableForm\">";
+$intro.=$form->toString();
+$intro.="</div>";
 
 $script = "<script>";
 $script.="/* attach a submit handler to the form */";
@@ -58,10 +55,10 @@ $script.="var content = $(data);";
 $script.="$(\"#mutableForm\").empty().html(content);";
 $script.="if(\$currentState.attr(\"class\")==\"shopping\"){";
 $script.="\$currentState.attr(\"class\", \"todo\");";
-$script.="\$currentState.html(\"TODOs\");";
+$script.="\$currentState.html(\"switch to TODOs\");";
 $script.="}else{";
 $script.="\$currentState.attr(\"class\", \"shopping\");";
-$script.="\$currentState.html(\"Shopping\");";
+$script.="\$currentState.html(\"switch to Shopping\");";
 $script.="}";
 					
 $script.="});";
@@ -69,13 +66,16 @@ $script.="});";
 $script.="});";
 $script.="</script>";
 
-$page.=$script;
+$intro.=$script;
+
+$intro.="</section>";// id=\"intro\">";
+
+//----------------------intro done
 
 $logger->log(0,"index.php::buildPage()", "presenting form defined in {$formInput}");
 
-$data = "<textarea rows=\"20\" cols=\"40\">";
-$data.= file_get_contents(YAML);
-$data.= "</textarea>";
+$content = "<div id=\"content\">";
+$content.="<div id=\"content_left\">";
 
 
 $shoppingList = Lists::parseGroceryList(Lists::getList("shopping"));
@@ -83,7 +83,7 @@ $shoppingList = Lists::parseGroceryList(Lists::getList("shopping"));
 //krumo($shoppingList);
 $list = "<div id=\"grocery_list\">";
 $list.="<h1>Shopping</h1><hr/>";
-
+$list.="<ul>";
 foreach($shoppingList as $store=>$items){
 //	echo "\$store";
 //	krumo($store);
@@ -93,11 +93,16 @@ foreach($shoppingList as $store=>$items){
 		$list.="<li>{$item["item"]}</li>";
 	}
 } 
+$list.="</ul></div>";
+
+$content.=$list."</div>";
+
+$content.="<div id=\"content_right\">";
 
 $todoList = Lists::parseTodoList(Lists::getList("todo"));
-$list.= "<div id=\"todo_list\">";
+$list= "<div id=\"todo_list\">";
 $list.="<h1>TODOs</h1><hr/>";
-
+$list.="<ul>";
 foreach($todoList as $doer=>$todos){
 //	echo "\$store";
 //	krumo($store);
@@ -107,16 +112,10 @@ foreach($todoList as $doer=>$todos){
 		$list.="<li>{$todo["todo"]}</li>";
 	}
 } 
+$list.="</ul></div>";
 
-
-$page.=$list; 
-
-//$page.=$data;
-
-
-
-
-
+$content.=$list."</div>"; 
+$content.= "</div>";// id=\"content\">";
 
 //NEXT STEPS...
 //	instantiate ListItem from POST array, write it out to file, after checking first to know whether it already exists
@@ -127,4 +126,4 @@ $page.=$list;
 $closure=  "<body/></html>";
 
 
-echo $header.$page.$closure;
+echo $header.$intro.$content.$closure;

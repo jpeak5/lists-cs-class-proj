@@ -67,7 +67,7 @@ class Form{
 				$form.= !empty($value)  ? $property."=\"".$value."\" " :"";
 				//			$form.="onfocus=\"if(this.value==this.defaultValue)this.value='';\" onblur=\"if(this.value=='')this.value=this.defaultValue;\"";
 			}
-			$form.="/><br/>";
+			$form.="/>";
 			//			$form.= "</li>";
 
 		}

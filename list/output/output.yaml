@@ -10,11 +10,11 @@ DEVOIRS:
       date-added:
       time-added:
     - 
-      todo:
-      who:
-      description:
-      deadline:
-      duration-estimate:
+      todo: cut wood
+      who: jason
+      description: cut and burn
+      deadline: 4/8/2012 12:00pm
+      duration-estimate: 2
       date-added:
       time-added:
   shopping:
@@ -54,6 +54,16 @@ DEVOIRS:
       description:
       price-estimate: 15
       shopper: jpeak5
+      date-needed:
+      time-needed:
+      date-added:
+      time-added:
+    - 
+      item: jason deodorant
+      store: whole foods
+      description: patchouli
+      price-estimate: 4
+      shopper:
       date-needed:
       time-needed:
       date-added:

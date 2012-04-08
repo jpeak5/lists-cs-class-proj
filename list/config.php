@@ -7,7 +7,7 @@ defined('LIB_PATH') ? null : define('LIB_PATH', SITE_ROOT.DS.'lib');
 defined('OUTPUT_PATH') ? null : define('OUTPUT_PATH', SITE_ROOT.DS.'output');
 defined('FORMS_PATH') ? null : define('FORMS_PATH', SITE_ROOT.DS.'forms');
 defined('JS_PATH') ? null : define('JS_PATH', LIB_PATH.DS.'js');
-//defined('CSS_PATH') ? null : define('CSS_PATH', SITE_ROOT.DS.'css');
+defined('CSS_PATH') ? null : define('CSS_PATH', SITE_ROOT.DS.'stylesheets');
 defined('YAML') ? null : define('YAML', OUTPUT_PATH.DS.'output.yaml');
 defined('LOG_FILE') ? null : define('LOG_FILE', OUTPUT_PATH.DS.'log.txt');
 defined('SPYC') ? null : define('SPYC', LIB_PATH.DS.'spyc-0.5'.DS.'spyc.php');

@@ -19492,3 +19492,860 @@
 2012-04-07 23:01:13 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:01
 2012-04-07 23:01:13 | DEBUG | [Form::toString()] | leaving toString, action set to index.php
 2012-04-07 23:01:13 | DEBUG | [index.php::buildPage()] | presenting form defined in /Users/jpeak5/Sites/shopList/list/forms/formInput.yaml
+2012-04-07 23:02:23 | DEBUG | [form.php] | $post is set proceeding to process request
+2012-04-07 23:02:23 | DEBUG | [Form::__construct] | action set to index.php
+2012-04-07 23:02:23 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:02:23 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:02:23 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:02:23 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:02:23 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:02:23 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:02:23 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:02:23 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:02:23 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:02:23 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:02:23 | DEBUG | [Form::toString()] | setting attribute placeholder to 04/07/12
+2012-04-07 23:02:23 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:02
+2012-04-07 23:02:23 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:02
+2012-04-07 23:02:23 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:02
+2012-04-07 23:02:23 | DEBUG | [Form::toString()] | leaving toString, action set to index.php
+2012-04-07 23:02:23 | DEBUG | [form.php] | presenting form defined in 
+2012-04-07 23:02:23 | DEBUG | [form.php] | $post is set proceeding to process request
+2012-04-07 23:02:23 | DEBUG | [Form::__construct] | action set to index.php
+2012-04-07 23:02:23 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:02:23 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:02:23 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:02:23 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:02:23 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:02:23 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:02:23 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:02:23 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:02:23 | DEBUG | [Form::toString()] | setting attribute placeholder to 04/07/12 @ 23:02
+2012-04-07 23:02:23 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:02
+2012-04-07 23:02:23 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:02
+2012-04-07 23:02:23 | DEBUG | [Form::toString()] | leaving toString, action set to index.php
+2012-04-07 23:02:23 | DEBUG | [form.php] | presenting form defined in 
+2012-04-07 23:03:02 | DEBUG | [SubmitHandler::process()] | Processing new todo form...
+2012-04-07 23:03:02 | DEBUG | [Form::__construct] | action set to index.php
+2012-04-07 23:03:02 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:03:02 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:03:02 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:03:02 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:03:02 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:03:02 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:03:02 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:03:02 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:03:02 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:03:02 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:03:02 | DEBUG | [Form::toString()] | setting attribute placeholder to 04/07/12
+2012-04-07 23:03:02 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:03
+2012-04-07 23:03:02 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:03
+2012-04-07 23:03:02 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:03
+2012-04-07 23:03:02 | DEBUG | [Form::toString()] | leaving toString, action set to index.php
+2012-04-07 23:03:02 | DEBUG | [index.php::buildPage()] | presenting form defined in /Users/jpeak5/Sites/shopList/list/forms/formInput.yaml
+2012-04-07 23:03:35 | DEBUG | [SubmitHandler::process()] | Processing new shopping form...
+2012-04-07 23:03:35 | DEBUG | [Form::__construct] | action set to index.php
+2012-04-07 23:03:35 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:03:35 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:03:35 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:03:35 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:03:35 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:03:35 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:03:35 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:03:35 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:03:35 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:03:35 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:03:35 | DEBUG | [Form::toString()] | setting attribute placeholder to 04/07/12
+2012-04-07 23:03:35 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:03
+2012-04-07 23:03:35 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:03
+2012-04-07 23:03:35 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:03
+2012-04-07 23:03:35 | DEBUG | [Form::toString()] | leaving toString, action set to index.php
+2012-04-07 23:03:35 | DEBUG | [index.php::buildPage()] | presenting form defined in /Users/jpeak5/Sites/shopList/list/forms/formInput.yaml
+2012-04-07 23:05:01 | DEBUG | [Form::__construct] | action set to index.php
+2012-04-07 23:05:01 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:05:01 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:05:01 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:05:01 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:05:01 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:05:01 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:05:01 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:05:01 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:05:01 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:05:01 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:05:01 | DEBUG | [Form::toString()] | setting attribute placeholder to 04/07/12
+2012-04-07 23:05:01 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:05
+2012-04-07 23:05:01 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:05
+2012-04-07 23:05:01 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:05
+2012-04-07 23:05:01 | DEBUG | [Form::toString()] | leaving toString, action set to index.php
+2012-04-07 23:05:01 | DEBUG | [index.php::buildPage()] | presenting form defined in /Users/jpeak5/Sites/shopList/list/forms/formInput.yaml
+2012-04-07 23:05:43 | DEBUG | [Form::__construct] | action set to index.php
+2012-04-07 23:05:43 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:05:43 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:05:43 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:05:43 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:05:43 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:05:43 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:05:43 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:05:43 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:05:43 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:05:43 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:05:43 | DEBUG | [Form::toString()] | setting attribute placeholder to 04/07/12
+2012-04-07 23:05:43 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:05
+2012-04-07 23:05:43 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:05
+2012-04-07 23:05:43 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:05
+2012-04-07 23:05:43 | DEBUG | [Form::toString()] | leaving toString, action set to index.php
+2012-04-07 23:05:43 | DEBUG | [index.php::buildPage()] | presenting form defined in /Users/jpeak5/Sites/shopList/list/forms/formInput.yaml
+2012-04-07 23:08:17 | DEBUG | [Form::__construct] | action set to index.php
+2012-04-07 23:08:17 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:17 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:17 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:17 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:17 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:17 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:17 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:17 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:17 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:17 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:17 | DEBUG | [Form::toString()] | setting attribute placeholder to 04/07/12
+2012-04-07 23:08:17 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:08
+2012-04-07 23:08:17 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:08
+2012-04-07 23:08:17 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:08
+2012-04-07 23:08:17 | DEBUG | [Form::toString()] | leaving toString, action set to index.php
+2012-04-07 23:08:17 | DEBUG | [index.php::buildPage()] | presenting form defined in /Users/jpeak5/Sites/shopList/list/forms/formInput.yaml
+2012-04-07 23:08:21 | DEBUG | [form.php] | $post is set proceeding to process request
+2012-04-07 23:08:21 | DEBUG | [Form::__construct] | action set to index.php
+2012-04-07 23:08:21 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:21 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:21 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:21 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:21 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:21 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:21 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:21 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:21 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:21 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:21 | DEBUG | [Form::toString()] | setting attribute placeholder to 04/07/12
+2012-04-07 23:08:21 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:08
+2012-04-07 23:08:21 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:08
+2012-04-07 23:08:21 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:08
+2012-04-07 23:08:21 | DEBUG | [Form::toString()] | leaving toString, action set to index.php
+2012-04-07 23:08:21 | DEBUG | [form.php] | presenting form defined in 
+2012-04-07 23:08:22 | DEBUG | [form.php] | $post is set proceeding to process request
+2012-04-07 23:08:22 | DEBUG | [Form::__construct] | action set to index.php
+2012-04-07 23:08:22 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:22 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:22 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:22 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:22 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:22 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:22 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:22 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:22 | DEBUG | [Form::toString()] | setting attribute placeholder to 04/07/12 @ 23:08
+2012-04-07 23:08:22 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:08
+2012-04-07 23:08:22 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:08
+2012-04-07 23:08:22 | DEBUG | [Form::toString()] | leaving toString, action set to index.php
+2012-04-07 23:08:22 | DEBUG | [form.php] | presenting form defined in 
+2012-04-07 23:08:23 | DEBUG | [form.php] | $post is set proceeding to process request
+2012-04-07 23:08:23 | DEBUG | [Form::__construct] | action set to index.php
+2012-04-07 23:08:23 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:23 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:23 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:23 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:23 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:23 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:23 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:23 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:23 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:23 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:23 | DEBUG | [Form::toString()] | setting attribute placeholder to 04/07/12
+2012-04-07 23:08:23 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:08
+2012-04-07 23:08:23 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:08
+2012-04-07 23:08:23 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:08
+2012-04-07 23:08:23 | DEBUG | [Form::toString()] | leaving toString, action set to index.php
+2012-04-07 23:08:23 | DEBUG | [form.php] | presenting form defined in 
+2012-04-07 23:08:24 | DEBUG | [form.php] | $post is set proceeding to process request
+2012-04-07 23:08:24 | DEBUG | [Form::__construct] | action set to index.php
+2012-04-07 23:08:24 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:24 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:24 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:24 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:24 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:24 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:24 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:24 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:24 | DEBUG | [Form::toString()] | setting attribute placeholder to 04/07/12 @ 23:08
+2012-04-07 23:08:24 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:08
+2012-04-07 23:08:24 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:08
+2012-04-07 23:08:24 | DEBUG | [Form::toString()] | leaving toString, action set to index.php
+2012-04-07 23:08:24 | DEBUG | [form.php] | presenting form defined in 
+2012-04-07 23:08:25 | DEBUG | [form.php] | $post is set proceeding to process request
+2012-04-07 23:08:25 | DEBUG | [Form::__construct] | action set to index.php
+2012-04-07 23:08:25 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:25 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:25 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:25 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:25 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:25 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:25 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:25 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:25 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:25 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:25 | DEBUG | [Form::toString()] | setting attribute placeholder to 04/07/12
+2012-04-07 23:08:25 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:08
+2012-04-07 23:08:25 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:08
+2012-04-07 23:08:25 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:08
+2012-04-07 23:08:25 | DEBUG | [Form::toString()] | leaving toString, action set to index.php
+2012-04-07 23:08:25 | DEBUG | [form.php] | presenting form defined in 
+2012-04-07 23:08:25 | DEBUG | [form.php] | $post is set proceeding to process request
+2012-04-07 23:08:25 | DEBUG | [Form::__construct] | action set to index.php
+2012-04-07 23:08:25 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:25 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:25 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:25 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:25 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:25 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:25 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:25 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:08:25 | DEBUG | [Form::toString()] | setting attribute placeholder to 04/07/12 @ 23:08
+2012-04-07 23:08:25 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:08
+2012-04-07 23:08:25 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:08
+2012-04-07 23:08:25 | DEBUG | [Form::toString()] | leaving toString, action set to index.php
+2012-04-07 23:08:25 | DEBUG | [form.php] | presenting form defined in 
+2012-04-07 23:09:29 | DEBUG | [Form::__construct] | action set to index.php
+2012-04-07 23:09:29 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:09:29 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:09:29 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:09:29 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:09:29 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:09:29 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:09:29 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:09:29 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:09:29 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:09:29 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:09:29 | DEBUG | [Form::toString()] | setting attribute placeholder to 04/07/12
+2012-04-07 23:09:29 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:09
+2012-04-07 23:09:29 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:09
+2012-04-07 23:09:29 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:09
+2012-04-07 23:09:29 | DEBUG | [Form::toString()] | leaving toString, action set to index.php
+2012-04-07 23:09:29 | DEBUG | [index.php::buildPage()] | presenting form defined in /Users/jpeak5/Sites/shopList/list/forms/formInput.yaml
+2012-04-07 23:11:59 | DEBUG | [Form::__construct] | action set to index.php
+2012-04-07 23:11:59 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:11:59 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:11:59 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:11:59 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:11:59 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:11:59 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:11:59 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:11:59 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:11:59 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:11:59 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:11:59 | DEBUG | [Form::toString()] | setting attribute placeholder to 04/07/12
+2012-04-07 23:11:59 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:11
+2012-04-07 23:11:59 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:11
+2012-04-07 23:11:59 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:11
+2012-04-07 23:11:59 | DEBUG | [Form::toString()] | leaving toString, action set to index.php
+2012-04-07 23:11:59 | DEBUG | [index.php::buildPage()] | presenting form defined in /Users/jpeak5/Sites/shopList/list/forms/formInput.yaml
+2012-04-07 23:13:06 | DEBUG | [Form::__construct] | action set to index.php
+2012-04-07 23:13:06 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:06 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:06 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:06 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:06 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:06 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:06 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:06 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:06 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:06 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:06 | DEBUG | [Form::toString()] | setting attribute placeholder to 04/07/12
+2012-04-07 23:13:06 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:13
+2012-04-07 23:13:06 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:13
+2012-04-07 23:13:06 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:13
+2012-04-07 23:13:06 | DEBUG | [Form::toString()] | leaving toString, action set to index.php
+2012-04-07 23:13:06 | DEBUG | [index.php::buildPage()] | presenting form defined in /Users/jpeak5/Sites/shopList/list/forms/formInput.yaml
+2012-04-07 23:13:08 | DEBUG | [Form::__construct] | action set to index.php
+2012-04-07 23:13:08 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:08 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:08 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:08 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:08 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:08 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:08 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:08 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:08 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:08 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:08 | DEBUG | [Form::toString()] | setting attribute placeholder to 04/07/12
+2012-04-07 23:13:08 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:13
+2012-04-07 23:13:08 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:13
+2012-04-07 23:13:08 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:13
+2012-04-07 23:13:08 | DEBUG | [Form::toString()] | leaving toString, action set to index.php
+2012-04-07 23:13:08 | DEBUG | [index.php::buildPage()] | presenting form defined in /Users/jpeak5/Sites/shopList/list/forms/formInput.yaml
+2012-04-07 23:13:10 | DEBUG | [form.php] | $post is set proceeding to process request
+2012-04-07 23:13:10 | DEBUG | [Form::__construct] | action set to index.php
+2012-04-07 23:13:10 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:10 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:10 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:10 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:10 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:10 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:10 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:10 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:10 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:10 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:10 | DEBUG | [Form::toString()] | setting attribute placeholder to 04/07/12
+2012-04-07 23:13:10 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:13
+2012-04-07 23:13:10 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:13
+2012-04-07 23:13:10 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:13
+2012-04-07 23:13:10 | DEBUG | [Form::toString()] | leaving toString, action set to index.php
+2012-04-07 23:13:10 | DEBUG | [form.php] | presenting form defined in 
+2012-04-07 23:13:11 | DEBUG | [form.php] | $post is set proceeding to process request
+2012-04-07 23:13:11 | DEBUG | [Form::__construct] | action set to index.php
+2012-04-07 23:13:11 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:11 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:11 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:11 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:11 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:11 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:11 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:11 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:11 | DEBUG | [Form::toString()] | setting attribute placeholder to 04/07/12 @ 23:13
+2012-04-07 23:13:11 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:13
+2012-04-07 23:13:11 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:13
+2012-04-07 23:13:11 | DEBUG | [Form::toString()] | leaving toString, action set to index.php
+2012-04-07 23:13:11 | DEBUG | [form.php] | presenting form defined in 
+2012-04-07 23:13:12 | DEBUG | [form.php] | $post is set proceeding to process request
+2012-04-07 23:13:12 | DEBUG | [Form::__construct] | action set to index.php
+2012-04-07 23:13:12 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:12 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:12 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:12 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:12 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:12 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:12 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:12 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:12 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:12 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:12 | DEBUG | [Form::toString()] | setting attribute placeholder to 04/07/12
+2012-04-07 23:13:12 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:13
+2012-04-07 23:13:12 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:13
+2012-04-07 23:13:12 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:13
+2012-04-07 23:13:12 | DEBUG | [Form::toString()] | leaving toString, action set to index.php
+2012-04-07 23:13:12 | DEBUG | [form.php] | presenting form defined in 
+2012-04-07 23:13:15 | DEBUG | [form.php] | $post is set proceeding to process request
+2012-04-07 23:13:15 | DEBUG | [Form::__construct] | action set to index.php
+2012-04-07 23:13:15 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:15 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:15 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:15 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:15 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:15 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:15 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:15 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:15 | DEBUG | [Form::toString()] | setting attribute placeholder to 04/07/12 @ 23:13
+2012-04-07 23:13:15 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:13
+2012-04-07 23:13:15 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:13
+2012-04-07 23:13:15 | DEBUG | [Form::toString()] | leaving toString, action set to index.php
+2012-04-07 23:13:15 | DEBUG | [form.php] | presenting form defined in 
+2012-04-07 23:13:16 | DEBUG | [form.php] | $post is set proceeding to process request
+2012-04-07 23:13:16 | DEBUG | [Form::__construct] | action set to index.php
+2012-04-07 23:13:16 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:16 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:16 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:16 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:16 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:16 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:16 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:16 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:16 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:16 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:16 | DEBUG | [Form::toString()] | setting attribute placeholder to 04/07/12
+2012-04-07 23:13:16 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:13
+2012-04-07 23:13:16 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:13
+2012-04-07 23:13:16 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:13
+2012-04-07 23:13:16 | DEBUG | [Form::toString()] | leaving toString, action set to index.php
+2012-04-07 23:13:16 | DEBUG | [form.php] | presenting form defined in 
+2012-04-07 23:13:35 | DEBUG | [Form::__construct] | action set to index.php
+2012-04-07 23:13:35 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:35 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:35 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:35 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:35 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:35 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:35 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:35 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:35 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:35 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:35 | DEBUG | [Form::toString()] | setting attribute placeholder to 04/07/12
+2012-04-07 23:13:35 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:13
+2012-04-07 23:13:35 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:13
+2012-04-07 23:13:35 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:13
+2012-04-07 23:13:35 | DEBUG | [Form::toString()] | leaving toString, action set to index.php
+2012-04-07 23:13:35 | DEBUG | [index.php::buildPage()] | presenting form defined in /Users/jpeak5/Sites/shopList/list/forms/formInput.yaml
+2012-04-07 23:13:37 | DEBUG | [form.php] | $post is set proceeding to process request
+2012-04-07 23:13:37 | DEBUG | [Form::__construct] | action set to index.php
+2012-04-07 23:13:37 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:37 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:37 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:37 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:37 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:37 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:37 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:37 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:37 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:37 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:37 | DEBUG | [Form::toString()] | setting attribute placeholder to 04/07/12
+2012-04-07 23:13:37 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:13
+2012-04-07 23:13:37 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:13
+2012-04-07 23:13:37 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:13
+2012-04-07 23:13:37 | DEBUG | [Form::toString()] | leaving toString, action set to index.php
+2012-04-07 23:13:37 | DEBUG | [form.php] | presenting form defined in 
+2012-04-07 23:13:38 | DEBUG | [form.php] | $post is set proceeding to process request
+2012-04-07 23:13:38 | DEBUG | [Form::__construct] | action set to index.php
+2012-04-07 23:13:38 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:38 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:38 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:38 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:38 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:38 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:38 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:38 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:38 | DEBUG | [Form::toString()] | setting attribute placeholder to 04/07/12 @ 23:13
+2012-04-07 23:13:38 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:13
+2012-04-07 23:13:38 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:13
+2012-04-07 23:13:38 | DEBUG | [Form::toString()] | leaving toString, action set to index.php
+2012-04-07 23:13:38 | DEBUG | [form.php] | presenting form defined in 
+2012-04-07 23:13:38 | DEBUG | [form.php] | $post is set proceeding to process request
+2012-04-07 23:13:38 | DEBUG | [Form::__construct] | action set to index.php
+2012-04-07 23:13:38 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:38 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:38 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:38 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:38 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:38 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:38 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:38 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:38 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:38 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:38 | DEBUG | [Form::toString()] | setting attribute placeholder to 04/07/12
+2012-04-07 23:13:38 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:13
+2012-04-07 23:13:38 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:13
+2012-04-07 23:13:38 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:13
+2012-04-07 23:13:38 | DEBUG | [Form::toString()] | leaving toString, action set to index.php
+2012-04-07 23:13:38 | DEBUG | [form.php] | presenting form defined in 
+2012-04-07 23:13:39 | DEBUG | [form.php] | $post is set proceeding to process request
+2012-04-07 23:13:39 | DEBUG | [Form::__construct] | action set to index.php
+2012-04-07 23:13:39 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:39 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:39 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:39 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:39 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:39 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:39 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:39 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:39 | DEBUG | [Form::toString()] | setting attribute placeholder to 04/07/12 @ 23:13
+2012-04-07 23:13:39 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:13
+2012-04-07 23:13:39 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:13
+2012-04-07 23:13:39 | DEBUG | [Form::toString()] | leaving toString, action set to index.php
+2012-04-07 23:13:39 | DEBUG | [form.php] | presenting form defined in 
+2012-04-07 23:13:39 | DEBUG | [form.php] | $post is set proceeding to process request
+2012-04-07 23:13:39 | DEBUG | [Form::__construct] | action set to index.php
+2012-04-07 23:13:39 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:39 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:39 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:39 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:39 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:39 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:39 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:39 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:39 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:39 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:39 | DEBUG | [Form::toString()] | setting attribute placeholder to 04/07/12
+2012-04-07 23:13:39 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:13
+2012-04-07 23:13:39 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:13
+2012-04-07 23:13:39 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:13
+2012-04-07 23:13:39 | DEBUG | [Form::toString()] | leaving toString, action set to index.php
+2012-04-07 23:13:39 | DEBUG | [form.php] | presenting form defined in 
+2012-04-07 23:13:40 | DEBUG | [form.php] | $post is set proceeding to process request
+2012-04-07 23:13:40 | DEBUG | [Form::__construct] | action set to index.php
+2012-04-07 23:13:40 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:40 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:40 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:40 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:40 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:40 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:40 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:40 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:13:40 | DEBUG | [Form::toString()] | setting attribute placeholder to 04/07/12 @ 23:13
+2012-04-07 23:13:40 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:13
+2012-04-07 23:13:40 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:13
+2012-04-07 23:13:40 | DEBUG | [Form::toString()] | leaving toString, action set to index.php
+2012-04-07 23:13:40 | DEBUG | [form.php] | presenting form defined in 
+2012-04-07 23:20:31 | DEBUG | [Form::__construct] | action set to index.php
+2012-04-07 23:20:31 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:20:31 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:20:31 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:20:31 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:20:31 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:20:31 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:20:31 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:20:31 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:20:31 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:20:31 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:20:31 | DEBUG | [Form::toString()] | setting attribute placeholder to 04/07/12
+2012-04-07 23:20:31 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:20
+2012-04-07 23:20:31 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:20
+2012-04-07 23:20:31 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:20
+2012-04-07 23:20:31 | DEBUG | [Form::toString()] | leaving toString, action set to index.php
+2012-04-07 23:20:31 | DEBUG | [index.php::buildPage()] | presenting form defined in /Users/jpeak5/Sites/shopList/list/forms/formInput.yaml
+2012-04-07 23:22:28 | DEBUG | [Form::__construct] | action set to index.php
+2012-04-07 23:22:28 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:22:28 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:22:28 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:22:28 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:22:28 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:22:28 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:22:28 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:22:28 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:22:28 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:22:28 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:22:28 | DEBUG | [Form::toString()] | setting attribute placeholder to 04/07/12
+2012-04-07 23:22:28 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:22
+2012-04-07 23:22:28 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:22
+2012-04-07 23:22:28 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:22
+2012-04-07 23:22:28 | DEBUG | [Form::toString()] | leaving toString, action set to index.php
+2012-04-07 23:22:28 | DEBUG | [index.php::buildPage()] | presenting form defined in /Users/jpeak5/Sites/shopList/list/forms/formInput.yaml
+2012-04-07 23:24:55 | DEBUG | [Form::__construct] | action set to index.php
+2012-04-07 23:24:55 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:24:55 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:24:55 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:24:55 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:24:55 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:24:55 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:24:55 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:24:55 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:24:55 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:24:55 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:24:55 | DEBUG | [Form::toString()] | setting attribute placeholder to 04/07/12
+2012-04-07 23:24:55 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:24
+2012-04-07 23:24:55 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:24
+2012-04-07 23:24:55 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:24
+2012-04-07 23:24:55 | DEBUG | [Form::toString()] | leaving toString, action set to index.php
+2012-04-07 23:24:55 | DEBUG | [index.php::buildPage()] | presenting form defined in /Users/jpeak5/Sites/shopList/list/forms/formInput.yaml
+2012-04-07 23:26:17 | DEBUG | [Form::__construct] | action set to index.php
+2012-04-07 23:26:17 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:26:17 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:26:17 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:26:17 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:26:17 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:26:17 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:26:17 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:26:17 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:26:17 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:26:17 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:26:17 | DEBUG | [Form::toString()] | setting attribute placeholder to 04/07/12
+2012-04-07 23:26:17 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:26
+2012-04-07 23:26:17 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:26
+2012-04-07 23:26:17 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:26
+2012-04-07 23:26:17 | DEBUG | [Form::toString()] | leaving toString, action set to index.php
+2012-04-07 23:26:17 | DEBUG | [index.php::buildPage()] | presenting form defined in /Users/jpeak5/Sites/shopList/list/forms/formInput.yaml
+2012-04-07 23:32:16 | DEBUG | [Form::__construct] | action set to index.php
+2012-04-07 23:32:16 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:16 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:16 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:16 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:16 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:16 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:16 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:16 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:16 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:16 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:16 | DEBUG | [Form::toString()] | setting attribute placeholder to 04/07/12
+2012-04-07 23:32:16 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:32
+2012-04-07 23:32:16 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:32
+2012-04-07 23:32:16 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:32
+2012-04-07 23:32:16 | DEBUG | [Form::toString()] | leaving toString, action set to index.php
+2012-04-07 23:32:16 | DEBUG | [index.php::buildPage()] | presenting form defined in /Users/jpeak5/Sites/shopList/list/forms/formInput.yaml
+2012-04-07 23:32:31 | DEBUG | [Form::__construct] | action set to index.php
+2012-04-07 23:32:31 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:31 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:31 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:31 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:31 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:31 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:31 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:31 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:31 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:31 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:31 | DEBUG | [Form::toString()] | setting attribute placeholder to 04/07/12
+2012-04-07 23:32:31 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:32
+2012-04-07 23:32:31 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:32
+2012-04-07 23:32:31 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:32
+2012-04-07 23:32:31 | DEBUG | [Form::toString()] | leaving toString, action set to index.php
+2012-04-07 23:32:31 | DEBUG | [index.php::buildPage()] | presenting form defined in /Users/jpeak5/Sites/shopList/list/forms/formInput.yaml
+2012-04-07 23:32:43 | DEBUG | [Form::__construct] | action set to index.php
+2012-04-07 23:32:43 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:43 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:43 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:43 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:43 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:43 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:43 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:43 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:43 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:43 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:43 | DEBUG | [Form::toString()] | setting attribute placeholder to 04/07/12
+2012-04-07 23:32:43 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:32
+2012-04-07 23:32:43 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:32
+2012-04-07 23:32:43 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:32
+2012-04-07 23:32:43 | DEBUG | [Form::toString()] | leaving toString, action set to index.php
+2012-04-07 23:32:43 | DEBUG | [index.php::buildPage()] | presenting form defined in /Users/jpeak5/Sites/shopList/list/forms/formInput.yaml
+2012-04-07 23:32:47 | DEBUG | [form.php] | $post is set proceeding to process request
+2012-04-07 23:32:47 | DEBUG | [Form::__construct] | action set to index.php
+2012-04-07 23:32:47 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:47 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:47 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:47 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:47 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:47 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:47 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:47 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:47 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:47 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:47 | DEBUG | [Form::toString()] | setting attribute placeholder to 04/07/12
+2012-04-07 23:32:47 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:32
+2012-04-07 23:32:47 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:32
+2012-04-07 23:32:47 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:32
+2012-04-07 23:32:47 | DEBUG | [Form::toString()] | leaving toString, action set to index.php
+2012-04-07 23:32:47 | DEBUG | [form.php] | presenting form defined in 
+2012-04-07 23:32:48 | DEBUG | [form.php] | $post is set proceeding to process request
+2012-04-07 23:32:48 | DEBUG | [Form::__construct] | action set to index.php
+2012-04-07 23:32:48 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:48 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:48 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:48 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:48 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:48 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:48 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:48 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:48 | DEBUG | [Form::toString()] | setting attribute placeholder to 04/07/12 @ 23:32
+2012-04-07 23:32:48 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:32
+2012-04-07 23:32:48 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:32
+2012-04-07 23:32:48 | DEBUG | [Form::toString()] | leaving toString, action set to index.php
+2012-04-07 23:32:48 | DEBUG | [form.php] | presenting form defined in 
+2012-04-07 23:32:50 | DEBUG | [form.php] | $post is set proceeding to process request
+2012-04-07 23:32:50 | DEBUG | [Form::__construct] | action set to index.php
+2012-04-07 23:32:50 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:50 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:50 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:50 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:50 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:50 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:50 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:50 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:50 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:50 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:50 | DEBUG | [Form::toString()] | setting attribute placeholder to 04/07/12
+2012-04-07 23:32:50 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:32
+2012-04-07 23:32:50 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:32
+2012-04-07 23:32:50 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:32
+2012-04-07 23:32:50 | DEBUG | [Form::toString()] | leaving toString, action set to index.php
+2012-04-07 23:32:50 | DEBUG | [form.php] | presenting form defined in 
+2012-04-07 23:32:51 | DEBUG | [form.php] | $post is set proceeding to process request
+2012-04-07 23:32:51 | DEBUG | [Form::__construct] | action set to index.php
+2012-04-07 23:32:51 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:51 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:51 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:51 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:51 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:51 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:51 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:51 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:51 | DEBUG | [Form::toString()] | setting attribute placeholder to 04/07/12 @ 23:32
+2012-04-07 23:32:51 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:32
+2012-04-07 23:32:51 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:32
+2012-04-07 23:32:51 | DEBUG | [Form::toString()] | leaving toString, action set to index.php
+2012-04-07 23:32:51 | DEBUG | [form.php] | presenting form defined in 
+2012-04-07 23:32:52 | DEBUG | [form.php] | $post is set proceeding to process request
+2012-04-07 23:32:52 | DEBUG | [Form::__construct] | action set to index.php
+2012-04-07 23:32:52 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:52 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:52 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:52 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:52 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:52 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:52 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:52 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:52 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:52 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:52 | DEBUG | [Form::toString()] | setting attribute placeholder to 04/07/12
+2012-04-07 23:32:52 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:32
+2012-04-07 23:32:52 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:32
+2012-04-07 23:32:52 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:32
+2012-04-07 23:32:52 | DEBUG | [Form::toString()] | leaving toString, action set to index.php
+2012-04-07 23:32:52 | DEBUG | [form.php] | presenting form defined in 
+2012-04-07 23:32:54 | DEBUG | [form.php] | $post is set proceeding to process request
+2012-04-07 23:32:54 | DEBUG | [Form::__construct] | action set to index.php
+2012-04-07 23:32:54 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:54 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:54 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:54 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:54 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:54 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:54 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:54 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:32:54 | DEBUG | [Form::toString()] | setting attribute placeholder to 04/07/12 @ 23:32
+2012-04-07 23:32:54 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:32
+2012-04-07 23:32:54 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:32
+2012-04-07 23:32:54 | DEBUG | [Form::toString()] | leaving toString, action set to index.php
+2012-04-07 23:32:54 | DEBUG | [form.php] | presenting form defined in 
+2012-04-07 23:33:17 | DEBUG | [Form::__construct] | action set to index.php
+2012-04-07 23:33:17 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:33:17 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:33:17 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:33:17 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:33:17 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:33:17 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:33:17 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:33:17 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:33:17 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:33:17 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:33:17 | DEBUG | [Form::toString()] | setting attribute placeholder to 04/07/12
+2012-04-07 23:33:17 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:33
+2012-04-07 23:33:17 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:33
+2012-04-07 23:33:17 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:33
+2012-04-07 23:33:17 | DEBUG | [Form::toString()] | leaving toString, action set to index.php
+2012-04-07 23:33:17 | DEBUG | [index.php::buildPage()] | presenting form defined in /Users/jpeak5/Sites/shopList/list/forms/formInput.yaml
+2012-04-07 23:34:16 | DEBUG | [Form::__construct] | action set to index.php
+2012-04-07 23:34:16 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:34:16 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:34:16 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:34:16 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:34:16 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:34:16 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:34:16 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:34:16 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:34:16 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:34:16 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:34:16 | DEBUG | [Form::toString()] | setting attribute placeholder to 04/07/12
+2012-04-07 23:34:16 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:34
+2012-04-07 23:34:16 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:34
+2012-04-07 23:34:16 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:34
+2012-04-07 23:34:16 | DEBUG | [Form::toString()] | leaving toString, action set to index.php
+2012-04-07 23:34:16 | DEBUG | [index.php::buildPage()] | presenting form defined in /Users/jpeak5/Sites/shopList/list/forms/formInput.yaml
+2012-04-07 23:36:27 | DEBUG | [Form::__construct] | action set to index.php
+2012-04-07 23:36:27 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:36:27 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:36:27 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:36:27 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:36:27 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:36:27 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:36:27 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:36:27 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:36:27 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:36:27 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:36:27 | DEBUG | [Form::toString()] | setting attribute placeholder to 04/07/12
+2012-04-07 23:36:27 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:36
+2012-04-07 23:36:27 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:36
+2012-04-07 23:36:27 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:36
+2012-04-07 23:36:27 | DEBUG | [Form::toString()] | leaving toString, action set to index.php
+2012-04-07 23:36:27 | DEBUG | [index.php::buildPage()] | presenting form defined in /Users/jpeak5/Sites/shopList/list/forms/formInput.yaml
+2012-04-07 23:36:59 | DEBUG | [Form::__construct] | action set to index.php
+2012-04-07 23:36:59 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:36:59 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:36:59 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:36:59 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:36:59 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:36:59 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:36:59 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:36:59 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:36:59 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:36:59 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:36:59 | DEBUG | [Form::toString()] | setting attribute placeholder to 04/07/12
+2012-04-07 23:36:59 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:36
+2012-04-07 23:36:59 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:36
+2012-04-07 23:36:59 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:36
+2012-04-07 23:36:59 | DEBUG | [Form::toString()] | leaving toString, action set to index.php
+2012-04-07 23:36:59 | DEBUG | [index.php::buildPage()] | presenting form defined in /Users/jpeak5/Sites/shopList/list/forms/formInput.yaml
+2012-04-07 23:37:15 | DEBUG | [form.php] | $post is set proceeding to process request
+2012-04-07 23:37:15 | DEBUG | [Form::__construct] | action set to index.php
+2012-04-07 23:37:15 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:37:15 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:37:15 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:37:15 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:37:15 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:37:15 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:37:15 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:37:15 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:37:15 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:37:15 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:37:15 | DEBUG | [Form::toString()] | setting attribute placeholder to 04/07/12
+2012-04-07 23:37:15 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:37
+2012-04-07 23:37:15 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:37
+2012-04-07 23:37:15 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:37
+2012-04-07 23:37:15 | DEBUG | [Form::toString()] | leaving toString, action set to index.php
+2012-04-07 23:37:15 | DEBUG | [form.php] | presenting form defined in 
+2012-04-07 23:37:17 | DEBUG | [form.php] | $post is set proceeding to process request
+2012-04-07 23:37:17 | DEBUG | [Form::__construct] | action set to index.php
+2012-04-07 23:37:17 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:37:17 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:37:17 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:37:17 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:37:17 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:37:17 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:37:17 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:37:17 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:37:17 | DEBUG | [Form::toString()] | setting attribute placeholder to 04/07/12 @ 23:37
+2012-04-07 23:37:17 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:37
+2012-04-07 23:37:17 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:37
+2012-04-07 23:37:17 | DEBUG | [Form::toString()] | leaving toString, action set to index.php
+2012-04-07 23:37:17 | DEBUG | [form.php] | presenting form defined in 
+2012-04-07 23:37:18 | DEBUG | [form.php] | $post is set proceeding to process request
+2012-04-07 23:37:18 | DEBUG | [Form::__construct] | action set to index.php
+2012-04-07 23:37:18 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:37:18 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:37:18 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:37:18 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:37:18 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:37:18 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:37:18 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:37:18 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:37:18 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:37:18 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:37:18 | DEBUG | [Form::toString()] | setting attribute placeholder to 04/07/12
+2012-04-07 23:37:18 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:37
+2012-04-07 23:37:18 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:37
+2012-04-07 23:37:18 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:37
+2012-04-07 23:37:18 | DEBUG | [Form::toString()] | leaving toString, action set to index.php
+2012-04-07 23:37:18 | DEBUG | [form.php] | presenting form defined in 
+2012-04-07 23:37:18 | DEBUG | [form.php] | $post is set proceeding to process request
+2012-04-07 23:37:18 | DEBUG | [Form::__construct] | action set to index.php
+2012-04-07 23:37:18 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:37:18 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:37:18 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:37:18 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:37:18 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:37:18 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:37:18 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:37:18 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:37:18 | DEBUG | [Form::toString()] | setting attribute placeholder to 04/07/12 @ 23:37
+2012-04-07 23:37:18 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:37
+2012-04-07 23:37:18 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:37
+2012-04-07 23:37:18 | DEBUG | [Form::toString()] | leaving toString, action set to index.php
+2012-04-07 23:37:18 | DEBUG | [form.php] | presenting form defined in 
+2012-04-07 23:37:19 | DEBUG | [form.php] | $post is set proceeding to process request
+2012-04-07 23:37:19 | DEBUG | [Form::__construct] | action set to index.php
+2012-04-07 23:37:19 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:37:19 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:37:19 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:37:19 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:37:19 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:37:19 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:37:19 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:37:19 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:37:19 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:37:19 | DEBUG | [instantiateFromYAML] | creating new instance of Input
+2012-04-07 23:37:19 | DEBUG | [Form::toString()] | setting attribute placeholder to 04/07/12
+2012-04-07 23:37:19 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:37
+2012-04-07 23:37:19 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:37
+2012-04-07 23:37:19 | DEBUG | [Form::toString()] | setting attribute placeholder to 23:37
+2012-04-07 23:37:19 | DEBUG | [Form::toString()] | leaving toString, action set to index.php
+2012-04-07 23:37:19 | DEBUG | [form.php] | presenting form defined in 
