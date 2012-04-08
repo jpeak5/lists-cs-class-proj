@@ -35,8 +35,15 @@ class Form{
 		$form.="<ul>";
 		$form.="<input type=\"hidden\" name=\"formid\" value=\"{$this->formid}\"/>";
 
+		
+		$i=0;
 		foreach($this->inputs as $input){
-			//			$form.= "<li>";
+			
+		//let only 3 fields across before newline	
+		if($input->type=="submit"||$i%3==0){
+					$form.="<br/>";
+				}
+
 			$form.="<input ";
 			$isDatetime = null;
 			foreach($input as $property=>$value){
@@ -69,7 +76,7 @@ class Form{
 			}
 			$form.="/>";
 			//			$form.= "</li>";
-
+		$i++;
 		}
 		$form.="</form>";
 

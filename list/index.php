@@ -28,7 +28,7 @@ $form = new Form("index.php", $formInput, "shopping");
 
 
 $intro="<section id=\"intro\">";
-$intro ="<button id=\"toggle\" class=\"shopping\" type=\"button\" >switch to TODOs</button>";
+$intro .="<button id=\"toggle\" class=\"shopping\" type=\"button\" >switch to TODOs</button>";
 
 $intro.="<div id=\"mutableForm\">";
 $intro.=$form->toString();
@@ -82,18 +82,19 @@ $shoppingList = Lists::parseGroceryList(Lists::getList("shopping"));
 //echo "\$shoppingList\n";
 //krumo($shoppingList);
 $list = "<div id=\"grocery_list\">";
-$list.="<h1>Shopping</h1><hr/>";
-$list.="<ul>";
+$list.="<h3>Shopping</h3>";
+
 foreach($shoppingList as $store=>$items){
 //	echo "\$store";
 //	krumo($store);
 	
-	$list.="<h2>".$store."</h2>";
+	$list.="<strong>".$store."</strong><ul>";
 	foreach($items as $item){
 		$list.="<li>{$item["item"]}</li>";
 	}
+	$list.="</ul>";
 } 
-$list.="</ul></div>";
+$list.="</div>";
 
 $content.=$list."</div>";
 
@@ -101,18 +102,19 @@ $content.="<div id=\"content_right\">";
 
 $todoList = Lists::parseTodoList(Lists::getList("todo"));
 $list= "<div id=\"todo_list\">";
-$list.="<h1>TODOs</h1><hr/>";
-$list.="<ul>";
+$list.="<h3>TODOs</h3>";
+
 foreach($todoList as $doer=>$todos){
 //	echo "\$store";
 //	krumo($store);
 	
-	$list.="<h2>".$doer."</h2>";
+	$list.="<strong>".$doer."</strong><ul>";
 	foreach($todos as $todo){
 		$list.="<li>{$todo["todo"]}</li>";
 	}
+	$list.="</ul>";
 } 
-$list.="</ul></div>";
+$list.="</div>";
 
 $content.=$list."</div>"; 
 $content.= "</div>";// id=\"content\">";

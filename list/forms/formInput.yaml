@@ -19,7 +19,7 @@ inputs:
       name: description
       size: 16
       type: text
-      placeholder: Description (optional)...
+      placeholder: Description...
 -
    input:
       maxlength: 6
@@ -37,17 +37,10 @@ inputs:
 -
    input:
       maxlength: 10
-      name: date-needed
-      size: 10
-      type: date
-      placeholder: 04/06/12
--
-   input:
-      maxlength: 10
-      name: time-needed
-      size: 10
-      type: time
-      placeholder: 12:36
+      name: datetime-needed
+      size: 16
+      type: datetime
+      placeholder: 04/06/12 
 -
    input:
       maxlength: 10
