@@ -1,68 +1,13 @@
 ---
 DEVOIRS:
-  todo:
-    0:
-      todo: cut wood
-      who: jason
-      description: cut and burn
-      deadline: 4/8/2012 12:00pm
-      duration-estimate: 2
-      date-added:
-      time-added:
-    1:
-      todo: closet cleanout
-      who: melanie
-      description: a massive affair
-      deadline: 4/8/2012 12:00pm
-      duration-estimate: 2
-      date-added:
-      time-added:
-    2:
-      todo: Laundry
-      who: both
-      description: 2 loads + foldin
-      deadline: 4/8/2012 4:00pm
-      duration-estimate: 2
-      date-added:
-      time-added:
-    3:
-      todo: Waggenspack prep
-      who: jason
-      description: Think
-      deadline: 2012-04-08T15:43:30Z
-      duration-estimate:
-      date-added:
-      time-added:
-    4:
-      todo: Reprogram thermo
-      who: both
-      description: Too hot am wknds
-      deadline: 2012-04-08T12:06:38.142Z
-      duration-estimate:
-      date-added:
-      time-added:
-    5:
-      todo: plant things????
-      who: melanie
-      description: seeds
-      deadline: 2012-04-08T20:50:40Z
-      duration-estimate: 15 min
-      date-added:
-      time-added:
-    7:
-      todo: Clean fridge
-      who: jason
-      description:
-      deadline: 2012-04-08T14:00:25.604Z
-      duration-estimate: 1
-      date-added:
-      time-added:
-    8:
-      todo: lunch
-      who: both
-      description: eat food
-      deadline: 2012-04-08T18:35:21Z
-      duration-estimate: 30 min
-      date-added:
-      time-added:
-  shopping: [ ]
+  ShoppingList:
+    - 
+      id: ed10a2ccc2e514aaac56f3e15e0c8b22173de511
+      item: cat food
+      store: Whole Foods
+      description: yum
+      price_estimate: 18
+      who: Melanie
+      deadline: 04/15/12 @ 17:18
+      timestamp: 04/15/12 @ 17:18
+  TodoList: [ ]

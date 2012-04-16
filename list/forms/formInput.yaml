@@ -1,5 +1,5 @@
 ---
-inputs:
+-
    input:
       maxlength: 16
       name: item
@@ -23,44 +23,43 @@ inputs:
 -
    input:
       maxlength: 6
-      name: price-estimate
+      name: price_estimate
       size: 16
       type: text
       placeholder: Price Estimate
 -
    input:
       maxlength: 16
-      name: shopper
+      name: who
       size: 16
       type: text
       placeholder: shopper
 -
    input:
       maxlength: 10
-      name: datetime-needed
+      name: deadline
       size: 16
       type: datetime
       placeholder: 04/06/12 
 -
    input:
       maxlength: 10
-      name: date-added
-      size: 10
-      type: hidden
+      name: timestamp
+      size: 16
+      type: datetime
+      readonly: readonly
       placeholder: 04/06/12
--
-   input:
-      maxlength: 10
-      name: time-added
-      size: 10
-      type: hidden
-      placeholder: 12:36
 -
    input:
       name: submit
       size: null
       type: submit
       placeholder: Submit
+-
+inputs:
+   input:
+      name: id
+      type: hidden
 -
 
 #   input:  

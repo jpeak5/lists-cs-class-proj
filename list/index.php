@@ -9,6 +9,29 @@ if(isset($_POST['submit'])){
 }
 
 
+$result = false;
+
+if(isset($_GET['ShoppingList'])){
+	//then this is a shopping list edit
+	$item = ShoppingList::findById($_GET['ShoppingList']);
+	if($item){
+//		krumo($item);
+		$form = Form::editForm("index.php", FORMS_PATH.DS.'formInput.yaml', "ShoppingList", $item);
+	}
+}elseif(isset($_GET['TodoList'])){
+	$item = TodoList::findById($_GET['TodoList']);
+	if($item){
+		$form = Form::editForm("index.php", FORMS_PATH.DS.'todoInputs.yaml', "TodoList", $item);
+	}
+}
+
+
+
+
+
+
+
+
 $now=time();
 $now = array(
 			'date'=>strftime("%m/%d/%g",$now),
@@ -23,12 +46,12 @@ $header.="</head>";
 $header.="<body>";
 
 $formInput = FORMS_PATH.DS."formInput.yaml";
-$form = new Form("index.php", $formInput, "shopping");
+$form = !isset($form) ? new Form("index.php", $formInput, "ShoppingList") : $form;
 
 
 
 $intro="<section id=\"intro\">";
-$intro .="<button id=\"toggle\" class=\"shopping\" type=\"button\" >switch to TODOs</button>";
+$intro .="<button id=\"toggle\" class=\"ShoppingList\" type=\"button\" >switch to TODOs</button>";
 
 $intro.="<div id=\"mutableForm\">";
 $intro.=$form->toString();
@@ -40,33 +63,34 @@ $script.="$(\"#toggle\").click(function(event){";
 $script.="console.log(\"beginning the script\");";
 $script.="/* stop form from submitting normally */";
 $script.="event.preventDefault();";
-                
+
 $script.="/* get some values from elements on the page: */";
-$script.="var \$currentState = $(this),"; 
-$script.="state = \$currentState.attr(\"class\"),"; 
+$script.="var \$currentState = $(this),";
+$script.="state = \$currentState.attr(\"class\"),";
 $script.="url = \"form.php\";";
 $script.="console.log(\"currentState= \"+\$currentState.attr(\"class\"));";
-                
+
 $script.="/* Send the data using post and put the results in a div */";
 $script.="$.post(url, {";
 $script.="form: state";
 $script.="}, function(data){";
 $script.="var content = $(data);";
 $script.="$(\"#mutableForm\").empty().html(content);";
-$script.="if(\$currentState.attr(\"class\")==\"shopping\"){";
-$script.="\$currentState.attr(\"class\", \"todo\");";
-$script.="\$currentState.html(\"switch to TODOs\");";
-$script.="}else{";
-$script.="\$currentState.attr(\"class\", \"shopping\");";
+$script.="if(\$currentState.attr(\"class\")==\"ShoppingList\"){";
+$script.="\$currentState.attr(\"class\", \"TodoList\");";
 $script.="\$currentState.html(\"switch to Shopping\");";
+$script.="}else{";
+$script.="\$currentState.attr(\"class\", \"ShoppingList\");";
+$script.="\$currentState.html(\"switch to Todo\");";
 $script.="}";
-					
+
 $script.="});";
-				
+
 $script.="});";
 $script.="</script>";
 
 $intro.=$script;
+$intro.="<a href=\"printme.php\">printable</a>";
 
 $intro.="</section>";// id=\"intro\">";
 
@@ -78,61 +102,68 @@ $content = "<div id=\"content\">";
 $content.="<div id=\"content_left\">";
 
 
-$shoppingList = Lists::parseGroceryList(Lists::getList("shopping"));
+$shoppingList = Lists::parseGroceryList(Lists::getList("ShoppingList"));
 //echo "\$shoppingList\n";
 //krumo($shoppingList);
 $list = "<div id=\"grocery_list\">";
 $list.="<h3>Shopping</h3>";
 
-foreach($shoppingList as $store=>$items){
-//	echo "\$store";
-//	krumo($store);
-	$storeTotal = 0;
-	$listHead="";
-	$listHead.="<span class=\"heading\"><strong>".$store;
-	$listBody = "<ul>";
-	foreach($items as $item){
-		$listBody.="<li class=\"litem\"><strong>{$item["item"]}</strong>&nbsp;(\${$item["price-estimate"]})";
-		$listBody.="<div class=\"deleteme\">&nbsp;<a href=\"delete.php?item=".urlencode($item["item"])."\">delete</a></div></li>";
-		$storeTotal+=isset($item["price-estimate"]) ? $item["price-estimate"]: 0;
-		$listBody.=(strlen($item["description"])>0)?"&nbsp;-".$item["description"]:"";
-		
+if(!empty($shoppingList)){
+	foreach($shoppingList as $store=>$items){
+		//	echo "\$store";
+		//	krumo($store);
+		$storeTotal = 0;
+		$listHead="";
+		$listHead.="<span class=\"heading\"><strong>".$store;
+		$listBody = "<ul>";
+		foreach($items as $item){
+			$listBody.="<li class=\"litem\"><strong>{$item->item}</strong>&nbsp;(\${$item->price_estimate})";
+			$listBody.="<div class=\"deleteme\">&nbsp;<a href=\"delete.php?ShoppingList=".urlencode($item->id)."\">delete</a></div></li>";
+			$listBody.="<div class=\"editme\">&nbsp;<a href=\"index.php?ShoppingList=".urlencode($item->id)."\">edit</a></div></li>";
+			$storeTotal+=isset($item->price_estimate) ? $item->price_estimate: 0;
+			$listBody.=(strlen($item->description)>0)?"&nbsp;-".$item->description:"";
+
+		}
+		$listHead.="</strong><span class=\"aggregate\">&nbsp;&nbsp;(\$".$storeTotal.")</span></span>";
+		$listBody.="</ul>";
+		$list.=$listHead.$listBody;
 	}
-	$listHead.="</strong><span class=\"aggregate\">&nbsp;&nbsp;(\$".$storeTotal.")</span></span>";
-	$listBody.="</ul>";
-	$list.=$listHead.$listBody;
-} 
+}
 $list.="</div>";
 
 $content.=$list."</div>";
 
 $content.="<div id=\"content_right\">";
 
-$todoList = Lists::parseTodoList(Lists::getList("todo"));
+$todoList = Lists::parseTodoList(Lists::getList("TodoList"));
+//krumo($todoList);
 $list= "<div id=\"todo_list\">";
 $list.="<h3>TODOs</h3>";
 
-foreach($todoList as $doer=>$todos){
-//	echo "\$store";
-//	krumo($store);
-	
-	$doerTotal = 0;
-	$listHead="";
-	$listHead.="<span class=\"heading\"><strong>".$doer;
-	$listBody="<ul>";
-	foreach($todos as $todo){
-		$listBody.="<li><strong>{$todo["todo"]}</strong> &nbsp;({$todo["duration-estimate"]})</li>";
-		$listBody.="<div class=\"deleteme\">&nbsp;<a href=\"delete.php?todo=".urlencode($todo["todo"])."\">delete</a></div></li>";
-		$doerTotal+=isset($todo["duration-estimate"]) ? $todo["duration-estimate"]: 0;
-		$listBody.=(strlen($todo["description"])>0)?"&nbsp;-".$todo["description"]:"";
+if(!empty($todoList)){
+	foreach($todoList as $doer=>$todos){
+		//	echo "\$store";
+		//	krumo($store);
+
+		$doerTotal = 0;
+		$listHead="";
+		$listHead.="<span class=\"heading\"><strong>".$doer;
+		$listBody="<ul>";
+		foreach($todos as $todo){
+			$listBody.="<li><strong>{$todo->item}</strong> &nbsp;({$todo->duration})</li>";
+			$listBody.="<div class=\"deleteme\">&nbsp;<a href=\"delete.php?TodoList=".urlencode($todo->id)."\">delete</a></div></li>";
+			$listBody.="<div class=\"editme\">&nbsp;<a href=\"index.php?TodoList=".urlencode($todo->id)."\">edit</a></div></li>";
+			$doerTotal+=isset($todo->duration) ? $todo->duration: 0;
+			$listBody.=(strlen($todo->description)>0)?"&nbsp;-".$todo->description:"";
+		}
+		$listHead.="</strong><span class=\"workAggregate\">&nbsp;&nbsp;(".$doerTotal.")</span></span>";
+		$listBody.="</ul>";
+		$list.=$listHead.$listBody;
 	}
-	$listHead.="</strong><span class=\"workAggregate\">&nbsp;&nbsp;(".$doerTotal.")</span></span>";
-	$listBody.="</ul>";
-	$list.=$listHead.$listBody;
-} 
+}
 $list.="</div>";
 
-$content.=$list."</div>"; 
+$content.=$list."</div>";
 $content.= "</div>";// id=\"content\">";
 
 //NEXT STEPS...

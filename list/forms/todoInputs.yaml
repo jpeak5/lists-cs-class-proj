@@ -1,8 +1,8 @@
 ---
-inputs:
+-
    input:
       maxlength: 16
-      name: todo
+      name: item
       size: 16
       type: text
       placeholder: Todo...
@@ -29,23 +29,17 @@ inputs:
 -
    input:
       maxlength: 6
-      name: duration-estimate
+      name: duration
       size: 16
       type: text
       placeholder: Duration (hours)
 -
    input:
       maxlength: 10
-      name: date-added
-      size: 10
-      type: hidden
-      placeholder: now
--
-   input:
-      maxlength: 10
-      name: time-added
-      size: 10
-      type: hidden
+      name: timestamp
+      size: 16
+      readonly: readonly
+      type: datetime
       placeholder: now
 -
    input:
@@ -54,7 +48,11 @@ inputs:
       type: submit
       placeholder: Submit
 -
-
+inputs:
+   input:
+      name: id
+      type: hidden
+-
 #   input:  
 #      autocomplete:
 #      autofocus
