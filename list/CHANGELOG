@@ -1,0 +1,16 @@
+Next steps-
+make this thing look better:
+-clean up layout
+-polish css
+-ajaxify list elements for accordina-style reveals, maybe
+-fix up a nice print presentation for the print-to-pdf
+
+make the list pivot on different axes
+-by list type - todo/shopping
+-by person
+-by date, etc
+
+
+
+2012-04-15
+added a DAL based on borrowed code using late static binding an inheritance to make an arbitrar number of descendant classes use the same Data access methods....very cool
