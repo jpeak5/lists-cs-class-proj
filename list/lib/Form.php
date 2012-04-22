@@ -99,6 +99,9 @@ class Form{
 			foreach($input as $property=>$value){
 				$form.= !empty($value)  ? $property."=\"".$value."\" " :"";
 				//			$form.="onfocus=\"if(this.value==this.defaultValue)this.value='';\" onblur=\"if(this.value=='')this.value=this.defaultValue;\"";
+				if($property == 'name' && $value == 'timestamp'){
+					$form.=" class=\"timestamp\" ";
+				}
 			}
 			$form.="/>";
 			//			$form.= "</li>";

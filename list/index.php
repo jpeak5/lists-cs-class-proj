@@ -89,6 +89,16 @@ $script.="});";
 $script.="});";
 $script.="</script>";
 
+//new script
+$script.="<script>";
+$script.="function confirmDelete(delUrl) {";
+$script.="  if (confirm(\"Are you sure you want to delete\")) {";
+$script.="    document.location = delUrl;";
+$script.="  }";
+$script.="}";
+$script.="</script>";
+
+
 $intro.=$script;
 $intro.="<a href=\"printme.php\">printable</a>";
 
@@ -118,11 +128,11 @@ if(!empty($shoppingList)){
 		$listBody = "<ul>";
 		foreach($items as $item){
 			$listBody.="<li class=\"litem\"><strong>{$item->item}</strong>&nbsp;(\${$item->price_estimate})";
-			$listBody.="<div class=\"deleteme\">&nbsp;<a href=\"delete.php?ShoppingList=".urlencode($item->id)."\">delete</a></div></li>";
-			$listBody.="<div class=\"editme\">&nbsp;<a href=\"index.php?ShoppingList=".urlencode($item->id)."\">edit</a></div></li>";
+			$listBody.="&nbsp;<a class=\"deleteme\" href=\"javascript:confirmDelete('delete.php?ShoppingList=".urlencode($item->id)."')\">delete</a>";
+			$listBody.="&nbsp;<a class=\"editme\" href=\"index.php?ShoppingList=".urlencode($item->id)."\">edit</a>";
 			$storeTotal+=isset($item->price_estimate) ? $item->price_estimate: 0;
-			$listBody.=(strlen($item->description)>0)?"&nbsp;-".$item->description:"";
-
+			$listBody.=(strlen($item->description)>0)?"<br/><span class=\"description\"> ".$item->description."</span>":"";
+			$listBody.="</li>";
 		}
 		$listHead.="</strong><span class=\"aggregate\">&nbsp;&nbsp;(\$".$storeTotal.")</span></span>";
 		$listBody.="</ul>";
@@ -150,11 +160,12 @@ if(!empty($todoList)){
 		$listHead.="<span class=\"heading\"><strong>".$doer;
 		$listBody="<ul>";
 		foreach($todos as $todo){
-			$listBody.="<li><strong>{$todo->item}</strong> &nbsp;({$todo->duration})</li>";
-			$listBody.="<div class=\"deleteme\">&nbsp;<a href=\"delete.php?TodoList=".urlencode($todo->id)."\">delete</a></div></li>";
-			$listBody.="<div class=\"editme\">&nbsp;<a href=\"index.php?TodoList=".urlencode($todo->id)."\">edit</a></div></li>";
+			$listBody.="<li class=\"litem\"><strong>{$todo->item}</strong> &nbsp;({$todo->duration})";
+			$listBody.="&nbsp;<a class=\"deleteme\" href=\"delete.php?TodoList=".urlencode($todo->id)."\">delete</a>";
+			$listBody.="&nbsp;<a class=\"editme\" href=\"index.php?TodoList=".urlencode($todo->id)."\">edit</a>";
 			$doerTotal+=isset($todo->duration) ? $todo->duration: 0;
-			$listBody.=(strlen($todo->description)>0)?"&nbsp;-".$todo->description:"";
+			$listBody.=(strlen($todo->description)>0)?"<br/><span class=\"description\">".$todo->description."</span>":"";
+			$listBody.="</li>";
 		}
 		$listHead.="</strong><span class=\"workAggregate\">&nbsp;&nbsp;(".$doerTotal.")</span></span>";
 		$listBody.="</ul>";

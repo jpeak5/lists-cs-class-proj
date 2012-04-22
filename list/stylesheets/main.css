@@ -41,7 +41,10 @@ p {
 
 #content {
 	display: table;
+	margin: 10px;
+	width: 100%;
 }
+
 
 #content_left {
 	display: table-cell;
@@ -67,4 +70,21 @@ p {
 	
 ul {
 	list-style: none;
+	width:100%;
+}
+
+li {
+	width:100%;
+	}
+
+.timestamp{
+	display: none;
+	}
+.description{
+	text-align: right;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 10px;
+	background-color:#F0F0F0;
+	color: red;
 }
