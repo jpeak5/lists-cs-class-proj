@@ -15,24 +15,24 @@ DEVOIRS:
       who: Both
       description:
       deadline: 04/21/12 @ 08:25
-      duration: 2
+      duration: 0.75
       timestamp: 04/21/12 @ 08:25
     - 
       id: 4b0630726d6d8c85d5ec3179ded17896c85239ac
-      item: diet plan?
+      item: meal plan
       who: Both
       description: find some more tasty easy recipes
-      deadline: 04/22/12 @ 08:26
+      deadline: 2012-04-22T06:27:18.283Z
       duration: 1
-      timestamp: 04/21/12 @ 08:26
+      timestamp:
     - 
       id: 1add422bda1d1c672a28d58cf7a01cdf3fb15ff9
       item: attic reorg
       who: Both
       description: get that junk out of the kitchen!
-      deadline: 04/22/12 @ 08:26
-      duration: 1
-      timestamp: 04/21/12 @ 08:26
+      deadline:
+      duration: 0.5
+      timestamp:
     - 
       id: 237891e4394b762169f920f7fdc878218b0e9056
       item: fix sink
@@ -62,9 +62,49 @@ DEVOIRS:
       item: document storage
       who: Jason
       description: org schema/system
-      deadline: 05/15/12 @ 08:36
-      duration:
-      timestamp: 04/21/12 @ 08:36
+      deadline: 2012-05-15T06:28:38Z
+      duration: 6
+      timestamp:
+    - 
+      id: c4df0c64ed3120a6920e6c86054f4149ae62edea
+      item: OS homework
+      who: Jason
+      description: 3 assignments
+      deadline: 2012-04-23T04:52:21Z
+      duration: 5
+      timestamp:
+    - 
+      id: 8e5c07eecb7b6add46432a5201c04be915f8821e
+      item: P4
+      who: Jason
+      description:
+      deadline: 2012-04-23T04:52:54Z
+      duration: 3
+      timestamp:
+    - 
+      id: 856567a0f60047eeadb3ad126dfba771aa92adae
+      item: kitchen patrol
+      who: Both
+      description:
+      deadline: 2012-04-22T06:26:17Z
+      duration: 0.75
+      timestamp:
+    - 
+      id: 5042d146667518a1a5017644946b8650aafca44c
+      item: shop
+      who: Both
+      description: "walmart, lunch, southside, matherne's,wf"
+      deadline: 2012-04-22T16:30:55Z
+      duration: 2
+      timestamp:
+    - 
+      id: e0d9bd8842844430d23bd59b5d2d956493f5fd1a
+      item: job apps
+      who: Melanie
+      description:
+      deadline: 2012-04-22T13:31:50Z
+      duration: 3
+      timestamp:
   ShoppingList:
     - 
       id: df998898345d641093542e832d80bea017b53eeb
@@ -76,56 +116,101 @@ DEVOIRS:
       deadline: 04/21/12 @ 08:36
       timestamp: 04/21/12 @ 08:36
     - 
-      id: fe7e9a936c42a75906f8753e5452eb90f545bcab
-      item: balsamic vinegar
-      store: Whole Foods
-      description: '*2 (one for j-work)'
-      price_estimate: 10
-      who: Jason
-      deadline: 04/21/12 @ 08:36
-      timestamp: 04/21/12 @ 08:36
-    - 
-      id: 52a7c2b11b9313bf262cd0a2f96c499f31904954
-      item: lettuce
-      store: Whole Foods
+      id: cf0f01707e7a501472a374d358e9e67f8d305b5d
+      item: Tp
+      store: Wal Mart
       description:
-      price_estimate: 5
+      price_estimate: 8
       who: Melanie
-      deadline: 04/21/12 @ 08:37
-      timestamp: 04/21/12 @ 08:37
+      deadline: 2012-04-22T05:29:15Z
+      timestamp:
     - 
-      id: e9a00f82ced8d169b78560cf7000959283312857
-      item: salad dressing
-      store: Whole Foods
-      description: tasty new fresh flavor
-      price_estimate: 5
+      id: 80ed1492c7690df12e90d25c2cfc90a7125c86d1
+      item: Wine
+      store: "Matherne's"
+      description: 6 bottles
+      price_estimate: 40
+      who: Jason
+      deadline: 2012-04-22T05:59:28.736Z
+      timestamp:
+    - 
+      id: 6a9d220b874dd2322d5e3e5666e7dde03ca51bcf
+      item: Beer
+      store: "Matherne's"
+      description: 12 bottles
+      price_estimate: 30
       who: Melanie
-      deadline: 04/21/12 @ 08:37
-      timestamp: 04/21/12 @ 08:37
+      deadline: 2012-04-22T05:58:54Z
+      timestamp:
     - 
-      id: 23d6578af83882bd219f727d36ed58b38aacf197
-      item: tomatos
-      store: Southside
+      id: 6ff291d8175b1d624892cd459444104fbd7ce87f
+      item: bread
+      store: Wal Mart
       description:
       price_estimate: 4
       who: Melanie
-      deadline: 04/21/12 @ 08:38
-      timestamp: 04/21/12 @ 08:38
+      deadline: 2012-04-22T06:34:08.257Z
+      timestamp:
     - 
-      id: a1549f93b2f93804ac425efc049537b9599d2266
-      item: greens
+      id: 0d22e6cea0fb7e63768ad1596f42dfd6b03ea659
+      item: string cheese
       store: Whole Foods
-      description: mixed, healthy
-      price_estimate: 5
+      description:
+      price_estimate: 6
       who: Jason
-      deadline: 04/21/12 @ 08:38
-      timestamp: 04/21/12 @ 08:38
+      deadline: 2012-04-22T06:36:37.797Z
+      timestamp:
     - 
-      id: ee9362bf61ac563f677f7a563cf05f111b4c8ec9
-      item: strawberries
-      store: Southside
-      description: 2 small buckets
-      price_estimate: 7
+      id: 44213f9f4d59b557314fadcd233232eebcac8012
+      item: coffee
+      store: Whole Foods
+      description:
+      price_estimate: 14
       who: Jason
-      deadline: 04/21/12 @ 08:38
-      timestamp: 04/21/12 @ 08:38
+      deadline: 2012-04-22T06:37:00.752Z
+      timestamp:
+    - 
+      id: e32e859930f14d92a15870788f8a21c8316ebdc7
+      item: couscous
+      store: Whole Foods
+      description:
+      price_estimate: 5
+      who: Melanie
+      deadline: 2012-04-22T06:39:27.039Z
+      timestamp:
+    - 
+      id: ce99c0d7756c7df3eedb9c12acb50ad2f36b6858
+      item: uncle sam
+      store: Wal Mart
+      description:
+      price_estimate: 4
+      who: Jason
+      deadline: 2012-04-22T16:11:03.287Z
+      timestamp:
+    - 
+      id: 1ef1d544f40de922e2ca8c713bda02f3ba1ca011
+      item: Tobacco
+      store: Discount
+      description:
+      price_estimate: 35
+      who: Melanie
+      deadline: 04/2/12 @ 08:43
+      timestamp: 04/22/12 @ 08:43
+    - 
+      id: a1e51dc8813502cc0f59dfd36b828e59a6caf001
+      item: Granola
+      store: Wal Mart
+      description: 2 boxes
+      price_estimate: 10
+      who: Both
+      deadline: 2012-04-22T16:07:18.642Z
+      timestamp:
+    - 
+      id: f6706ea333bbff8e98d76a5482684d9e7c749ec4
+      item: Avocado
+      store: Southside
+      description: 2
+      price_estimate: 2
+      who: Jason
+      deadline: 2012-04-22T16:08:04.446Z
+      timestamp:
