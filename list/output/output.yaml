@@ -1,13 +1,131 @@
 ---
 DEVOIRS:
+  TodoList:
+    - 
+      id: 5e25610a4814d0abce4235b31e31cb74608ab5da
+      item: cut wood
+      who: Jason
+      description: cut and burn
+      deadline: 04/21/12 @ 08:24
+      duration: 2
+      timestamp: 04/21/12 @ 08:24
+    - 
+      id: d34c12c7afd15a7de7b618bc3fff47fd70884362
+      item: laundry
+      who: Both
+      description:
+      deadline: 04/21/12 @ 08:25
+      duration: 2
+      timestamp: 04/21/12 @ 08:25
+    - 
+      id: 4b0630726d6d8c85d5ec3179ded17896c85239ac
+      item: diet plan?
+      who: Both
+      description: find some more tasty easy recipes
+      deadline: 04/22/12 @ 08:26
+      duration: 1
+      timestamp: 04/21/12 @ 08:26
+    - 
+      id: 1add422bda1d1c672a28d58cf7a01cdf3fb15ff9
+      item: attic reorg
+      who: Both
+      description: get that junk out of the kitchen!
+      deadline: 04/22/12 @ 08:26
+      duration: 1
+      timestamp: 04/21/12 @ 08:26
+    - 
+      id: 237891e4394b762169f920f7fdc878218b0e9056
+      item: fix sink
+      who: Jason
+      description: ugh
+      deadline: 04/22/12 @ 08:27
+      duration: 1
+      timestamp: 04/21/12 @ 08:27
+    - 
+      id: a977dd9fa5e81e503cf9512c00cebe427065e21f
+      item: plant things
+      who: Melanie
+      description: seeds
+      deadline: 04/21/12 @ 08:27
+      duration: 1
+      timestamp: 04/21/12 @ 08:27
+    - 
+      id: 1c5debce808be2d70f959dee8572f97f6e679956
+      item: find thumb drive
+      who: Melanie
+      description: where could it be?
+      deadline: 04/21/12 @ 08:28
+      duration: 0.25
+      timestamp: 04/21/12 @ 08:28
+    - 
+      id: ec10be5c7d3c77c308aa45257451cb0ebc26db21
+      item: document storage
+      who: Jason
+      description: org schema/system
+      deadline: 05/15/12 @ 08:36
+      duration:
+      timestamp: 04/21/12 @ 08:36
   ShoppingList:
     - 
-      id: ed10a2ccc2e514aaac56f3e15e0c8b22173de511
+      id: df998898345d641093542e832d80bea017b53eeb
       item: cat food
+      store: Wal Mart
+      description:
+      price_estimate: 15
+      who: Both
+      deadline: 04/21/12 @ 08:36
+      timestamp: 04/21/12 @ 08:36
+    - 
+      id: fe7e9a936c42a75906f8753e5452eb90f545bcab
+      item: balsamic vinegar
       store: Whole Foods
-      description: yum
-      price_estimate: 18
+      description: '*2 (one for j-work)'
+      price_estimate: 10
+      who: Jason
+      deadline: 04/21/12 @ 08:36
+      timestamp: 04/21/12 @ 08:36
+    - 
+      id: 52a7c2b11b9313bf262cd0a2f96c499f31904954
+      item: lettuce
+      store: Whole Foods
+      description:
+      price_estimate: 5
       who: Melanie
-      deadline: 04/15/12 @ 17:18
-      timestamp: 04/15/12 @ 17:18
-  TodoList: [ ]
+      deadline: 04/21/12 @ 08:37
+      timestamp: 04/21/12 @ 08:37
+    - 
+      id: e9a00f82ced8d169b78560cf7000959283312857
+      item: salad dressing
+      store: Whole Foods
+      description: tasty new fresh flavor
+      price_estimate: 5
+      who: Melanie
+      deadline: 04/21/12 @ 08:37
+      timestamp: 04/21/12 @ 08:37
+    - 
+      id: 23d6578af83882bd219f727d36ed58b38aacf197
+      item: tomatos
+      store: Southside
+      description:
+      price_estimate: 4
+      who: Melanie
+      deadline: 04/21/12 @ 08:38
+      timestamp: 04/21/12 @ 08:38
+    - 
+      id: a1549f93b2f93804ac425efc049537b9599d2266
+      item: greens
+      store: Whole Foods
+      description: mixed, healthy
+      price_estimate: 5
+      who: Jason
+      deadline: 04/21/12 @ 08:38
+      timestamp: 04/21/12 @ 08:38
+    - 
+      id: ee9362bf61ac563f677f7a563cf05f111b4c8ec9
+      item: strawberries
+      store: Southside
+      description: 2 small buckets
+      price_estimate: 7
+      who: Jason
+      deadline: 04/21/12 @ 08:38
+      timestamp: 04/21/12 @ 08:38
