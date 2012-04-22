@@ -161,7 +161,7 @@ if(!empty($todoList)){
 		$listBody="<ul>";
 		foreach($todos as $todo){
 			$listBody.="<li class=\"litem\"><strong>{$todo->item}</strong> &nbsp;({$todo->duration})";
-			$listBody.="&nbsp;<a class=\"deleteme\" href=\"delete.php?TodoList=".urlencode($todo->id)."\">delete</a>";
+			$listBody.="&nbsp;<a class=\"deleteme\" href=\"javascript:confirmDelete('delete.php?TodoList=".urlencode($todo->id)."')\">delete</a>";
 			$listBody.="&nbsp;<a class=\"editme\" href=\"index.php?TodoList=".urlencode($todo->id)."\">edit</a>";
 			$doerTotal+=isset($todo->duration) ? $todo->duration: 0;
 			$listBody.=(strlen($todo->description)>0)?"<br/><span class=\"description\">".$todo->description."</span>":"";
