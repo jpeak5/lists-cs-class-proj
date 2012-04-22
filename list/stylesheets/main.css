@@ -14,11 +14,20 @@ header,footer,aside,nav,article {
 	display: block;
 }
 
+
+/*
+*This stylesheet is using a color palette found on kuler, 'Sexy Leggings', http://kuler.adobe.com/#themeID/1842624.
+*
+*/
+
+
 body {
 	margin: 0 auto;
 	width: 940px;
 	font: 13px/ 22px Helvetica, Arial, sans-serif;
-	background: #f0fdf0;
+	background: #BFB8A3;
+	padding: 10px;
+	color:#231A18;
 }
 
 h2 {
@@ -37,8 +46,13 @@ p {
 	padding-bottom: 22px;
 }
 
-
-
+a:link {
+	color:#231A18;
+	} 
+a.deleteme:link{
+	color:#BFB8A3;
+	background-color:#593D36;
+	}
 #content {
 	display: table;
 	margin: 10px;
@@ -61,11 +75,12 @@ p {
 #content .heading{
 		display:block;
 		padding:2 5 2 5;
-		background: #CCCCCC;
+		background: #593D36;
+		color:#F2F2F2;
 	}
 #content .aggregate{
 	padding-left:5px;
-	color: #FF0000;
+	color: #F2F2F2;
 	}
 	
 ul {
@@ -85,6 +100,5 @@ li {
 	padding-left: 20px;
 	padding-right: 20px;
 	font-size: 10px;
-	background-color:#F0F0F0;
-	color: red;
+	color: #8C6F5E;
 }
