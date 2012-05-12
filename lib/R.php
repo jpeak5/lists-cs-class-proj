@@ -11,7 +11,7 @@ class R {
 		foreach($yaml as $inputs){
 //			print_r($inputs);
 			foreach($inputs as $input){
-				$logger->log(0,"instantiateFromYAML","creating new instance of {$class}");
+//				$logger->log(0,"R::instantiateFromYAML","creating new instance of {$class}");
 
 				//Instantiate the reflection object
 				$reflect = new ReflectionClass($class);
