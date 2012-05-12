@@ -50,28 +50,12 @@ DEVOIRS:
       duration: 1
       timestamp: 04/21/12 @ 08:27
     - 
-      id: 1c5debce808be2d70f959dee8572f97f6e679956
-      item: find thumb drive
-      who: Melanie
-      description: where could it be?
-      deadline: 04/21/12 @ 08:28
-      duration: 0.25
-      timestamp: 04/21/12 @ 08:28
-    - 
       id: ec10be5c7d3c77c308aa45257451cb0ebc26db21
       item: document storage
       who: Jason
       description: org schema/system
       deadline: 2012-05-15T06:28:38Z
       duration: 6
-      timestamp:
-    - 
-      id: c4df0c64ed3120a6920e6c86054f4149ae62edea
-      item: OS homework
-      who: Jason
-      description: 3 assignments
-      deadline: 2012-04-23T04:52:21Z
-      duration: 5
       timestamp:
     - 
       id: 8e5c07eecb7b6add46432a5201c04be915f8821e
@@ -97,111 +81,121 @@ DEVOIRS:
       deadline: 2012-04-22T16:30:55Z
       duration: 2
       timestamp:
-    - 
-      id: e0d9bd8842844430d23bd59b5d2d956493f5fd1a
-      item: job apps
-      who: Melanie
-      description:
-      deadline: 2012-04-22T13:31:50Z
-      duration: 3
-      timestamp:
   ShoppingList:
-    0:
-      id: df998898345d641093542e832d80bea017b53eeb
-      item: cat food
-      store: Wal Mart
-      description:
-      price_estimate: 15
-      who: Both
-      deadline: 04/21/12 @ 08:36
-      timestamp: 04/21/12 @ 08:36
-    1:
-      id: cf0f01707e7a501472a374d358e9e67f8d305b5d
-      item: Tp
-      store: Wal Mart
-      description:
-      price_estimate: 8
-      who: Melanie
-      deadline: 2012-04-22T05:29:15Z
-      timestamp:
     2:
-      id: 80ed1492c7690df12e90d25c2cfc90a7125c86d1
-      item: Wine
-      store: "Matherne's"
-      description: 6 bottles
-      price_estimate: 40
+      id: e4fd69b08aca140838ea650323ccf78234d3c99c
+      item: wine
+      store: Whole Foods
+      description: for friday night
+      price_estimate: 10
       who: Jason
-      deadline: 2012-04-22T05:59:28.736Z
-      timestamp:
+      deadline: 05/04/12 @ 16:19
+      timestamp: 05/04/12 @ 16:19
     3:
-      id: 6a9d220b874dd2322d5e3e5666e7dde03ca51bcf
-      item: Beer
-      store: "Matherne's"
-      description: 12 bottles
-      price_estimate: 30
+      id: e32e859930f14d92a15870788f8a21c8316ebdc7
+      item: couscous
+      store: Whole Foods
+      description: side dishes
+      price_estimate: 5
       who: Melanie
-      deadline: 2012-04-22T05:58:54Z
-      timestamp:
+      deadline: 05/04/12 @ 16:18
+      timestamp: 05/04/12 @ 16:18
     4:
+      id: 600982cf9c0c41e12df616d2a9a72d675345ced7
+      item: beer
+      store: Whole Foods
+      description: 8pk
+      price_estimate: 10
+      who: Melanie
+      deadline: 05/04/12 @ 16:19
+      timestamp: 05/04/12 @ 16:19
+    5:
+      id: 829f188f14c993be297ec9231f0795ed1a7b814d
+      item: soy milk
+      store: Whole Foods
+      description: milk
+      price_estimate: 4
+      who:
+      deadline: 2012-05-06T15:22:07.956Z
+      timestamp:
+    6:
+      id: cf5dbf0ec57dff5da56d86c45b3bdd11849a065a
+      item: milk
+      store: Whole Foods
+      description: quart
+      price_estimate: 3
+      who:
+      deadline: 2012-05-06T15:22:47.295Z
+      timestamp:
+    7:
       id: 6ff291d8175b1d624892cd459444104fbd7ce87f
       item: bread
-      store: Wal Mart
+      store: Wal-Mart
       description:
-      price_estimate: 4
-      who: Melanie
-      deadline: 2012-04-22T06:34:08.257Z
+      price_estimate: 3
+      who:
+      deadline: 2012-05-06T15:23:18.904Z
       timestamp:
-    5:
-      id: 0d22e6cea0fb7e63768ad1596f42dfd6b03ea659
-      item: string cheese
+    8:
+      id: eab0ff0314af76111ba6cd1dea1e1f71b0b49a45
+      item: hummus
+      store: Wal-Mart
+      description:
+      price_estimate: 3
+      who:
+      deadline: 2012-05-06T15:25:18.215Z
+      timestamp:
+    9:
+      id: f6c1ab81815f784f6b910c1e4b08aaeeb145dd9e
+      item: soap
+      store: Whole Foods
+      description:
+      price_estimate: 15
+      who:
+      deadline: 2012-05-06T15:26:28.491Z
+      timestamp:
+    13:
+      id: fe6b4b50cec761cacb68b9cc15bdb7ad571a12f6
+      item: nuts
       store: Whole Foods
       description:
       price_estimate: 6
-      who: Jason
-      deadline: 2012-04-22T06:36:37.797Z
+      who:
+      deadline: 2012-05-06T15:29:36.617Z
       timestamp:
-    6:
+    14:
+      id: 986e64ff8850fb408ee631cd9de463f927cecc9b
+      item: mushrooms
+      store: Ss
+      description:
+      price_estimate: 3
+      who: Melanie
+      deadline: 05/06/12 @ 12:55
+      timestamp: 05/06/12 @ 12:55
+    15:
+      id: bd111dcb4b343de4ec0a79d2d5ec55a3919c79c4
+      item: eggs
+      store: Wal-Mart
+      description: half-dozen
+      price_estimate: 3
+      who: Melanie
+      deadline: 05/06/12 @ 12:56
+      timestamp: 05/06/12 @ 12:56
+    16:
       id: 44213f9f4d59b557314fadcd233232eebcac8012
       item: coffee
       store: Whole Foods
       description:
       price_estimate: 14
-      who: Jason
-      deadline: 2012-04-22T06:37:00.752Z
-      timestamp:
-    8:
-      id: ce99c0d7756c7df3eedb9c12acb50ad2f36b6858
-      item: uncle sam
-      store: Wal Mart
-      description:
-      price_estimate: 4
-      who: Jason
-      deadline: 2012-04-22T16:11:03.287Z
-      timestamp:
-    9:
-      id: 1ef1d544f40de922e2ca8c713bda02f3ba1ca011
-      item: Tobacco
-      store: Discount
-      description:
-      price_estimate: 35
       who: Melanie
-      deadline: 04/2/12 @ 08:43
-      timestamp: 04/22/12 @ 08:43
-    10:
-      id: a1e51dc8813502cc0f59dfd36b828e59a6caf001
-      item: Granola
-      store: Wal Mart
-      description: 2 boxes
+      deadline: 05/06/12 @ 12:58
+      timestamp: 05/06/12 @ 12:58
+    17:
+      id: 66f972081897b7e2ef3f66a0c8d9b1d841c83642
+      item: sunday lunch
+      store: Whole Foods
+      description: something tasty
       price_estimate: 10
-      who: Both
-      deadline: 2012-04-22T16:07:18.642Z
-      timestamp:
-    11:
-      id: f6706ea333bbff8e98d76a5482684d9e7c749ec4
-      item: Avocado
-      store: Southside
-      description: 2
-      price_estimate: 2
-      who: Jason
-      deadline: 2012-04-22T16:08:04.446Z
-      timestamp:
+      who: Melanie
+      deadline: 05/06/12 @ 13:51
+      timestamp: 05/06/12 @ 13:51
