@@ -5,6 +5,11 @@ require_once(SPYC);
 class Lists {
 
 	public static function getYAML(){
+            global $logger;
+            if(!is_writable(YAML)){
+                $logger->log(0,"Lists::getYAML()", "file is not writable!");
+                return false;
+            }
 		$data = SPYC::YAMLLoad(YAML);
 
 		//if the file is empty, initialize it with the root element
