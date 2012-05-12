@@ -106,7 +106,7 @@ DEVOIRS:
       duration: 3
       timestamp:
   ShoppingList:
-    - 
+    0:
       id: df998898345d641093542e832d80bea017b53eeb
       item: cat food
       store: Wal Mart
@@ -115,7 +115,7 @@ DEVOIRS:
       who: Both
       deadline: 04/21/12 @ 08:36
       timestamp: 04/21/12 @ 08:36
-    - 
+    1:
       id: cf0f01707e7a501472a374d358e9e67f8d305b5d
       item: Tp
       store: Wal Mart
@@ -124,7 +124,7 @@ DEVOIRS:
       who: Melanie
       deadline: 2012-04-22T05:29:15Z
       timestamp:
-    - 
+    2:
       id: 80ed1492c7690df12e90d25c2cfc90a7125c86d1
       item: Wine
       store: "Matherne's"
@@ -133,7 +133,7 @@ DEVOIRS:
       who: Jason
       deadline: 2012-04-22T05:59:28.736Z
       timestamp:
-    - 
+    3:
       id: 6a9d220b874dd2322d5e3e5666e7dde03ca51bcf
       item: Beer
       store: "Matherne's"
@@ -142,7 +142,7 @@ DEVOIRS:
       who: Melanie
       deadline: 2012-04-22T05:58:54Z
       timestamp:
-    - 
+    4:
       id: 6ff291d8175b1d624892cd459444104fbd7ce87f
       item: bread
       store: Wal Mart
@@ -151,7 +151,7 @@ DEVOIRS:
       who: Melanie
       deadline: 2012-04-22T06:34:08.257Z
       timestamp:
-    - 
+    5:
       id: 0d22e6cea0fb7e63768ad1596f42dfd6b03ea659
       item: string cheese
       store: Whole Foods
@@ -160,7 +160,7 @@ DEVOIRS:
       who: Jason
       deadline: 2012-04-22T06:36:37.797Z
       timestamp:
-    - 
+    6:
       id: 44213f9f4d59b557314fadcd233232eebcac8012
       item: coffee
       store: Whole Foods
@@ -169,16 +169,7 @@ DEVOIRS:
       who: Jason
       deadline: 2012-04-22T06:37:00.752Z
       timestamp:
-    - 
-      id: e32e859930f14d92a15870788f8a21c8316ebdc7
-      item: couscous
-      store: Whole Foods
-      description:
-      price_estimate: 5
-      who: Melanie
-      deadline: 2012-04-22T06:39:27.039Z
-      timestamp:
-    - 
+    8:
       id: ce99c0d7756c7df3eedb9c12acb50ad2f36b6858
       item: uncle sam
       store: Wal Mart
@@ -187,7 +178,7 @@ DEVOIRS:
       who: Jason
       deadline: 2012-04-22T16:11:03.287Z
       timestamp:
-    - 
+    9:
       id: 1ef1d544f40de922e2ca8c713bda02f3ba1ca011
       item: Tobacco
       store: Discount
@@ -196,7 +187,7 @@ DEVOIRS:
       who: Melanie
       deadline: 04/2/12 @ 08:43
       timestamp: 04/22/12 @ 08:43
-    - 
+    10:
       id: a1e51dc8813502cc0f59dfd36b828e59a6caf001
       item: Granola
       store: Wal Mart
@@ -205,7 +196,7 @@ DEVOIRS:
       who: Both
       deadline: 2012-04-22T16:07:18.642Z
       timestamp:
-    - 
+    11:
       id: f6706ea333bbff8e98d76a5482684d9e7c749ec4
       item: Avocado
       store: Southside
