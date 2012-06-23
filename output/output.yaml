@@ -10,14 +10,6 @@ DEVOIRS:
       duration: 2
       timestamp: 04/21/12 @ 08:24
     - 
-      id: d34c12c7afd15a7de7b618bc3fff47fd70884362
-      item: laundry
-      who: Both
-      description:
-      deadline: 04/21/12 @ 08:25
-      duration: 0.75
-      timestamp: 04/21/12 @ 08:25
-    - 
       id: 4b0630726d6d8c85d5ec3179ded17896c85239ac
       item: meal plan
       who: Both
@@ -26,27 +18,11 @@ DEVOIRS:
       duration: 1
       timestamp:
     - 
-      id: 1add422bda1d1c672a28d58cf7a01cdf3fb15ff9
-      item: attic reorg
-      who: Both
-      description: get that junk out of the kitchen!
-      deadline:
-      duration: 0.5
-      timestamp:
-    - 
       id: 237891e4394b762169f920f7fdc878218b0e9056
       item: fix sink
       who: Jason
       description: ugh
       deadline: 04/22/12 @ 08:27
-      duration: 1
-      timestamp: 04/21/12 @ 08:27
-    - 
-      id: a977dd9fa5e81e503cf9512c00cebe427065e21f
-      item: plant things
-      who: Melanie
-      description: seeds
-      deadline: 04/21/12 @ 08:27
       duration: 1
       timestamp: 04/21/12 @ 08:27
     - 
@@ -58,144 +34,172 @@ DEVOIRS:
       duration: 6
       timestamp:
     - 
-      id: 8e5c07eecb7b6add46432a5201c04be915f8821e
-      item: P4
-      who: Jason
-      description:
-      deadline: 2012-04-23T04:52:54Z
-      duration: 3
-      timestamp:
-    - 
       id: 856567a0f60047eeadb3ad126dfba771aa92adae
       item: kitchen patrol
       who: Both
       description:
       deadline: 2012-04-22T06:26:17Z
-      duration: 0.75
+      duration: 0.3
       timestamp:
     - 
-      id: 5042d146667518a1a5017644946b8650aafca44c
-      item: shop
-      who: Both
-      description: "walmart, lunch, southside, matherne's,wf"
-      deadline: 2012-04-22T16:30:55Z
+      id: 3efe14159f4121a5dfd3f5f9dcc46e9280cd64d6
+      item: cabin
+      who: Melanie
+      description: researchmelanie research, pick, book
+      deadline: 2012-05-16T00:23:57Z
       duration: 2
       timestamp:
   ShoppingList:
-    2:
-      id: e4fd69b08aca140838ea650323ccf78234d3c99c
-      item: wine
-      store: Whole Foods
-      description: for friday night
-      price_estimate: 10
-      who: Jason
-      deadline: 05/04/12 @ 16:19
-      timestamp: 05/04/12 @ 16:19
-    3:
-      id: e32e859930f14d92a15870788f8a21c8316ebdc7
-      item: couscous
-      store: Whole Foods
-      description: side dishes
-      price_estimate: 5
-      who: Melanie
-      deadline: 05/04/12 @ 16:18
-      timestamp: 05/04/12 @ 16:18
-    4:
-      id: 600982cf9c0c41e12df616d2a9a72d675345ced7
+    - 
+      id: 793889305ef2577195717b7b639b57c434f5072c
       item: beer
-      store: Whole Foods
-      description: 8pk
-      price_estimate: 10
-      who: Melanie
-      deadline: 05/04/12 @ 16:19
-      timestamp: 05/04/12 @ 16:19
-    5:
-      id: 829f188f14c993be297ec9231f0795ed1a7b814d
-      item: soy milk
-      store: Whole Foods
-      description: milk
+      store: "Matherne's"
+      description:
+      price_estimate: 30
+      who: Both
+      deadline: 05/20/12 @ 11:57
+      timestamp: 05/20/12 @ 11:57
+    - 
+      id: afe0721eb0798708611c0fc56a68f803046a8598
+      item: box-o-wine
+      store: "Matherne's"
+      description: black box cab
+      price_estimate: 20
+      who: Jason
+      deadline: 05/25/12 @ 06:23
+      timestamp: 05/25/12 @ 06:23
+    - 
+      id: 6ff291d8175b1d624892cd459444104fbd7ce87f
+      item: bread
+      store: Wal Mart
+      description:
       price_estimate: 4
       who:
-      deadline: 2012-05-06T15:22:07.956Z
-      timestamp:
-    6:
+      deadline: 06/17/12 @ 16:40
+      timestamp: 06/17/12 @ 16:40
+    - 
+      id: 1d7234eda9f8dfe87a79e2f2938986a97b03afca
+      item: 'mac & Cheese'
+      store: Whole Foods
+      description:
+      price_estimate: 3
+      who:
+      deadline: 06/17/12 @ 16:39
+      timestamp: 06/17/12 @ 16:39
+    - 
       id: cf5dbf0ec57dff5da56d86c45b3bdd11849a065a
       item: milk
       store: Whole Foods
-      description: quart
-      price_estimate: 3
-      who:
-      deadline: 2012-05-06T15:22:47.295Z
-      timestamp:
-    7:
-      id: 6ff291d8175b1d624892cd459444104fbd7ce87f
-      item: bread
-      store: Wal-Mart
       description:
       price_estimate: 3
       who:
-      deadline: 2012-05-06T15:23:18.904Z
-      timestamp:
-    8:
-      id: eab0ff0314af76111ba6cd1dea1e1f71b0b49a45
-      item: hummus
-      store: Wal-Mart
-      description:
-      price_estimate: 3
-      who:
-      deadline: 2012-05-06T15:25:18.215Z
-      timestamp:
-    9:
-      id: f6c1ab81815f784f6b910c1e4b08aaeeb145dd9e
-      item: soap
+      deadline: 06/17/12 @ 16:39
+      timestamp: 06/17/12 @ 16:39
+    - 
+      id: a1549f93b2f93804ac425efc049537b9599d2266
+      item: greens
       store: Whole Foods
       description:
-      price_estimate: 15
+      price_estimate: 2
       who:
-      deadline: 2012-05-06T15:26:28.491Z
-      timestamp:
-    13:
-      id: fe6b4b50cec761cacb68b9cc15bdb7ad571a12f6
-      item: nuts
+      deadline: 06/17/12 @ 16:40
+      timestamp: 06/17/12 @ 16:40
+    - 
+      id: a41ddc3f849d5f28e8af62943db7cc9f09cfe79c
+      item: granola
+      store: Wal Mart
+      description:
+      price_estimate: 4
+      who:
+      deadline: 06/17/12 @ 16:42
+      timestamp: 06/17/12 @ 16:42
+    - 
+      id: 6aa3c4572c0e91cb2a4a052fc4cd2b3a14bfe0ae
+      item: olive oil
+      store: Whole Foods
+      description: big jug
+      price_estimate: 12
+      who: Jason
+      deadline: 06/22/12 @ 16:31
+      timestamp: 06/22/12 @ 16:31
+    - 
+      id: fe7e9a936c42a75906f8753e5452eb90f545bcab
+      item: balsamic vinegar
+      store: Whole Foods
+      description:
+      price_estimate: 7
+      who: Jason
+      deadline: 06/22/12 @ 16:32
+      timestamp: 06/22/12 @ 16:32
+    - 
+      id: 4b1f0c49f8bc342d621cde157b8e035e4fbd3ee3
+      item: tabouleh salad
+      store: Whole Foods
+      description:
+      price_estimate: 4
+      who:
+      deadline: 06/22/12 @ 16:32
+      timestamp: 06/22/12 @ 16:32
+    - 
+      id: b0c818aa0985c95aa4db6c42f8fd7941cdb63ad8
+      item: lemons
+      store: Whole Foods
+      description:
+      price_estimate: 3
+      who:
+      deadline: 06/22/12 @ 16:32
+      timestamp: 06/22/12 @ 16:32
+    - 
+      id: 378a000e0e31ed9626d45ef0808438adbf945291
+      item: canned tuna
+      store: Whole Foods
+      description: "for sammy's"
+      price_estimate: 5
+      who: Jason
+      deadline: 06/22/12 @ 16:32
+      timestamp: 06/22/12 @ 16:32
+    - 
+      id: 28ab915bbc251fc9ac1771e0eb6a7fcbf3080a65
+      item: shrimp
+      store: Whole Foods
+      description: frozen
+      price_estimate: 11
+      who: Jason
+      deadline: 06/22/12 @ 16:33
+      timestamp: 06/22/12 @ 16:33
+    - 
+      id: 4ffcf321c72e796c8da820e519d0f76f50f701a9
+      item: salmon
+      store: Whole Foods
+      description: for dinner tonight
+      price_estimate: 9
+      who: Jason
+      deadline: 06/22/12 @ 16:33
+      timestamp: 06/22/12 @ 16:33
+    - 
+      id: 7c316d99995cca7fe5eba53e0a1d7f7952016cef
+      item: poewr greens
       store: Whole Foods
       description:
       price_estimate: 6
-      who:
-      deadline: 2012-05-06T15:29:36.617Z
-      timestamp:
-    14:
-      id: 986e64ff8850fb408ee631cd9de463f927cecc9b
-      item: mushrooms
-      store: Ss
-      description:
-      price_estimate: 3
-      who: Melanie
-      deadline: 05/06/12 @ 12:55
-      timestamp: 05/06/12 @ 12:55
-    15:
-      id: bd111dcb4b343de4ec0a79d2d5ec55a3919c79c4
-      item: eggs
-      store: Wal-Mart
-      description: half-dozen
-      price_estimate: 3
-      who: Melanie
-      deadline: 05/06/12 @ 12:56
-      timestamp: 05/06/12 @ 12:56
-    16:
-      id: 44213f9f4d59b557314fadcd233232eebcac8012
-      item: coffee
+      who: Jason
+      deadline: 06/22/12 @ 17:04
+      timestamp: 06/22/12 @ 17:04
+    - 
+      id: 52a7c2b11b9313bf262cd0a2f96c499f31904954
+      item: lettuce
       store: Whole Foods
       description:
-      price_estimate: 14
-      who: Melanie
-      deadline: 05/06/12 @ 12:58
-      timestamp: 05/06/12 @ 12:58
-    17:
-      id: 66f972081897b7e2ef3f66a0c8d9b1d841c83642
-      item: sunday lunch
-      store: Whole Foods
-      description: something tasty
-      price_estimate: 10
-      who: Melanie
-      deadline: 05/06/12 @ 13:51
-      timestamp: 05/06/12 @ 13:51
+      price_estimate: 5
+      who: Jason
+      deadline: 06/22/12 @ 17:04
+      timestamp: 06/22/12 @ 17:04
+    - 
+      id: ce99c0d7756c7df3eedb9c12acb50ad2f36b6858
+      item: uncle sam
+      store: Wal Mart
+      description:
+      price_estimate: 4
+      who: Jason
+      deadline: 06/22/12 @ 17:05
+      timestamp: 06/22/12 @ 17:05
