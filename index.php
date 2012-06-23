@@ -1,28 +1,29 @@
 <?php
+
 require_once("config.php");
 require_once(SPYC);
 
 global $logger;
 
-if(isset($_POST['submit'])){
-	SubmitHandler::process($_POST);
+if (isset($_POST['submit'])) {
+    SubmitHandler::process($_POST);
 }
 
 
 $result = false;
 
-if(isset($_GET['ShoppingList'])){
-	//then this is a shopping list edit
-	$item = ShoppingList::findById($_GET['ShoppingList']);
-	if($item){
+if (isset($_GET['ShoppingList'])) {
+    //then this is a shopping list edit
+    $item = ShoppingList::findById($_GET['ShoppingList']);
+    if ($item) {
 //		krumo($item);
-		$form = Form::editForm("index.php", FORMS_PATH.DS.'formInput.yaml', "ShoppingList", $item);
-	}
-}elseif(isset($_GET['TodoList'])){
-	$item = TodoList::findById($_GET['TodoList']);
-	if($item){
-		$form = Form::editForm("index.php", FORMS_PATH.DS.'todoInputs.yaml', "TodoList", $item);
-	}
+        $form = Form::editForm("index.php", FORMS_PATH . DS . 'formInput.yaml', "ShoppingList", $item);
+    }
+} elseif (isset($_GET['TodoList'])) {
+    $item = TodoList::findById($_GET['TodoList']);
+    if ($item) {
+        $form = Form::editForm("index.php", FORMS_PATH . DS . 'todoInputs.yaml', "TodoList", $item);
+    }
 }
 
 
@@ -32,10 +33,10 @@ if(isset($_GET['ShoppingList'])){
 
 
 
-$now=time();
+$now = time();
 $now = array(
-			'date'=>strftime("%m/%d/%g",$now),
-			'time'=>strftime("%H:%M",$now)
+    'date' => strftime("%m/%d/%g", $now),
+    'time' => strftime("%H:%M", $now)
 );
 
 
@@ -45,12 +46,12 @@ $header.="<link rel=\"stylesheet\" type=\"text/css\" href=\"stylesheets/main.css
 $header.="</head>";
 $header.="<body>";
 
-$formInput = FORMS_PATH.DS."formInput.yaml";
+$formInput = FORMS_PATH . DS . "formInput.yaml";
 $form = !isset($form) ? new Form("index.php", $formInput, "ShoppingList") : $form;
 
 
 
-$intro="<section id=\"intro\">";
+$intro = "<section id=\"intro\">";
 $intro .="<button id=\"toggle\" class=\"ShoppingList\" type=\"button\" >switch to TODOs</button>";
 
 $intro.="<div id=\"mutableForm\">";
@@ -102,11 +103,10 @@ $script.="</script>";
 $intro.=$script;
 $intro.="<a href=\"printme.php\">printable</a>";
 
-$intro.="</section>";// id=\"intro\">";
-
+$intro.="</section>"; // id=\"intro\">";
 //----------------------intro done
 
-$logger->log(0,"index.php::buildPage()", "presenting form defined in {$formInput}");
+$logger->log(0, "index.php::buildPage()", "presenting form defined in {$formInput}");
 
 $content = "<div id=\"content\">";
 $content.="<div id=\"content_left\">";
@@ -118,72 +118,51 @@ $shoppingList = Lists::parseGroceryList(Lists::getList("ShoppingList"));
 $list = "<div id=\"grocery_list\">";
 $list.="<h3>Shopping</h3>";
 
-if(!empty($shoppingList)){
-	foreach($shoppingList as $store=>$items){
-		//	echo "\$store";
-		//	krumo($store);
-		$storeTotal = 0;
-		$listHead="";
-		$listHead.="<span class=\"heading\"><strong>".$store;
-		$listBody = "<ul>";
-		foreach($items as $item){
-			$listBody.="<li class=\"litem\"><strong>{$item->item}</strong>&nbsp;(\${$item->price_estimate})";
-			$listBody.="&nbsp;<a class=\"deleteme\" href=\"javascript:confirmDelete('delete.php?ShoppingList=".urlencode($item->id)."')\">delete</a>";
-			$listBody.="&nbsp;<a class=\"editme\" href=\"index.php?ShoppingList=".urlencode($item->id)."\">edit</a>";
-			$storeTotal+=isset($item->price_estimate) ? $item->price_estimate: 0;
-			$listBody.=(strlen($item->description)>0)?"<br/><span class=\"description\"> ".$item->description."</span>":"";
-			$listBody.="</li>";
-		}
-		$listHead.="</strong><span class=\"aggregate\">&nbsp;&nbsp;(\$".$storeTotal.")</span></span>";
-		$listBody.="</ul>";
-		$list.=$listHead.$listBody;
-	}
-}
+$list.= ListView::RenderShoppingList($shoppingList);
 $list.="</div>";
 
-$content.=$list."</div>";
+$content.=$list . "</div>";
 
 $content.="<div id=\"content_right\">";
 
 $todoList = Lists::parseTodoList(Lists::getList("TodoList"));
 //krumo($todoList);
-$list= "<div id=\"todo_list\">";
+$list = "<div id=\"todo_list\">";
 $list.="<h3>TODOs</h3>";
 
-if(!empty($todoList)){
-	foreach($todoList as $doer=>$todos){
-		//	echo "\$store";
-		//	krumo($store);
+if (!empty($todoList)) {
+    foreach ($todoList as $doer => $todos) {
+        //	echo "\$store";
+        //	krumo($store);
 
-		$doerTotal = 0;
-		$listHead="";
-		$listHead.="<span class=\"heading\"><strong>".$doer;
-		$listBody="<ul>";
-		foreach($todos as $todo){
-			$listBody.="<li class=\"litem\"><strong>{$todo->item}</strong> &nbsp;({$todo->duration})";
-			$listBody.="&nbsp;<a class=\"deleteme\" href=\"javascript:confirmDelete('delete.php?TodoList=".urlencode($todo->id)."')\">delete</a>";
-			$listBody.="&nbsp;<a class=\"editme\" href=\"index.php?TodoList=".urlencode($todo->id)."\">edit</a>";
-			$doerTotal+=isset($todo->duration) ? $todo->duration: 0;
-			$listBody.=(strlen($todo->description)>0)?"<br/><span class=\"description\">".$todo->description."</span>":"";
-			$listBody.="</li>";
-		}
-		$listHead.="</strong><span class=\"workAggregate\">&nbsp;&nbsp;(".$doerTotal.")</span></span>";
-		$listBody.="</ul>";
-		$list.=$listHead.$listBody;
-	}
+        $doerTotal = 0;
+        $listHead = "";
+        $listHead.="<span class=\"heading\"><strong>" . $doer;
+        $listBody = "<ul>";
+        foreach ($todos as $todo) {
+            $listBody.="<li class=\"litem\"><strong>{$todo->item}</strong> &nbsp;({$todo->duration})";
+            $listBody.="&nbsp;<a class=\"deleteme\" href=\"javascript:confirmDelete('delete.php?TodoList=" . urlencode($todo->id) . "')\">delete</a>";
+            $listBody.="&nbsp;<a class=\"editme\" href=\"index.php?TodoList=" . urlencode($todo->id) . "\">edit</a>";
+            $doerTotal+=isset($todo->duration) ? $todo->duration : 0;
+            $listBody.=(strlen($todo->description) > 0) ? "<br/><span class=\"description\">" . $todo->description . "</span>" : "";
+            $listBody.="</li>";
+        }
+        $listHead.="</strong><span class=\"workAggregate\">&nbsp;&nbsp;(" . $doerTotal . ")</span></span>";
+        $listBody.="</ul>";
+        $list.=$listHead . $listBody;
+    }
 }
 $list.="</div>";
 
-$content.=$list."</div>";
-$content.= "</div>";// id=\"content\">";
-
+$content.=$list . "</div>";
+$content.= "</div>"; // id=\"content\">";
 //NEXT STEPS...
 //	instantiate ListItem from POST array, write it out to file, after checking first to know whether it already exists
 //		check length of file for too much length.
 
 
 
-$closure=  "<body/></html>";
+$closure = "<body/></html>";
 
 
-echo $header.$intro.$content.$closure;
+echo $header . $intro . $content . $closure;

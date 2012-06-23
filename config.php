@@ -28,6 +28,7 @@ require_once(LIB_PATH.DS."R.php");
 require_once(LIB_PATH.DS."SubmitHandler.php");
 require_once(LIB_PATH.DS."Lists.php");
 require_once(LIB_PATH.DS."ListItem.php");
+require_once(LIB_PATH.DS."ListView.php");
 require_once(LIB_PATH.DS."ShoppingList.php");
 require_once(LIB_PATH.DS."TodoList.php");
 //require_once(LIB_PATH.DS."krumo".DS."class.krumo.php");
