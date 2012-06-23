@@ -2,8 +2,8 @@
 defined('DS') ? null : define('DS', DIRECTORY_SEPARATOR);
 
 
-//defined('SITE_ROOT') ? null : define('SITE_ROOT', DS.'Users'.DS.'jpeak5'.DS.'Sites'.DS.'shopList'.DS.'list');
-defined('SITE_ROOT') ? null : define('SITE_ROOT', DS.'home1'.DS.'piquagen'.DS.'public_html'.DS.'list');
+defined('SITE_ROOT') ? null : define('SITE_ROOT', DS.'Users'.DS.'jpeak5'.DS.'Sites'.DS.'lists');
+//defined('SITE_ROOT') ? null : define('SITE_ROOT', DS.'home1'.DS.'piquagen'.DS.'public_html'.DS.'list');
 defined('LIB_PATH') ? null : define('LIB_PATH', SITE_ROOT.DS.'lib');
 defined('OUTPUT_PATH') ? null : define('OUTPUT_PATH', SITE_ROOT.DS.'output');
 defined('FORMS_PATH') ? null : define('FORMS_PATH', SITE_ROOT.DS.'forms');
