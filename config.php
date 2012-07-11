@@ -31,6 +31,9 @@ require_once(LIB_PATH.DS."ListItem.php");
 require_once(LIB_PATH.DS."ListView.php");
 require_once(LIB_PATH.DS."ShoppingList.php");
 require_once(LIB_PATH.DS."TodoList.php");
+require_once(LIB_PATH.DS."dbObject.php");
+require_once(LIB_PATH.DS."Store.php");
+require_once(LIB_PATH.DS."Database.php");
 //require_once(LIB_PATH.DS."krumo".DS."class.krumo.php");
 
 //output folder needs to be writable by the web server!!!!!
