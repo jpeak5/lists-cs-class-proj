@@ -25,7 +25,7 @@ body {
 	margin: 0 auto;
 	width: 940px;
 	font: 13px/ 22px Helvetica, Arial, sans-serif;
-	background: #BFB8A3;
+	background: #299155;
 	padding: 10px;
 	color:#231A18;
 }
@@ -75,7 +75,7 @@ a.deleteme:link{
 #content .heading{
 		display:block;
 		padding:2 5 2 5;
-		background: #593D36;
+		background: #464646;
 		color:#F2F2F2;
 	}
 #content .aggregate{
