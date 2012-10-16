@@ -2,7 +2,7 @@
 defined('DS') ? null : define('DS', DIRECTORY_SEPARATOR);
 
 
-defined('SITE_ROOT') ? null : define('SITE_ROOT', DS.'Users'.DS.'jpeak5'.DS.'Sites'.DS.'lists');
+defined('SITE_ROOT') ? null : define('SITE_ROOT',__DIR__);
 //defined('SITE_ROOT') ? null : define('SITE_ROOT', DS.'home1'.DS.'piquagen'.DS.'public_html'.DS.'list');
 defined('LIB_PATH') ? null : define('LIB_PATH', SITE_ROOT.DS.'lib');
 defined('OUTPUT_PATH') ? null : define('OUTPUT_PATH', SITE_ROOT.DS.'output');
