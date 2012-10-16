@@ -6,3 +6,4 @@ cgi-bin/
 error_log
 default.html
 *.sql*
+/lib/constants.php
