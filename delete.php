@@ -17,6 +17,8 @@ if(isset($_GET['ShoppingList'])){
 
 if($result){
 	header('Location: index.php');
+}else{
+    die("item deletion failed");
 }
 
 ?>
