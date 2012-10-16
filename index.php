@@ -57,46 +57,10 @@ $intro.="<div id=\"mutableForm\">";
 $intro.=$form->toString();
 $intro.="</div>";
 
-$script = "<script>";
-$script.="/* attach a submit handler to the form */";
-$script.="$(\"#toggle\").click(function(event){";
-$script.="console.log(\"beginning the script\");";
-$script.="/* stop form from submitting normally */";
-$script.="event.preventDefault();";
-
-$script.="/* get some values from elements on the page: */";
-$script.="var \$currentState = $(this),";
-$script.="state = \$currentState.attr(\"class\"),";
-$script.="url = \"form.php\";";
-$script.="console.log(\"currentState= \"+\$currentState.attr(\"class\"));";
-
-$script.="/* Send the data using post and put the results in a div */";
-$script.="$.post(url, {";
-$script.="form: state";
-$script.="}, function(data){";
-$script.="var content = $(data);";
-$script.="$(\"#mutableForm\").empty().html(content);";
-$script.="if(\$currentState.attr(\"class\")==\"ShoppingList\"){";
-$script.="\$currentState.attr(\"class\", \"TodoList\");";
-$script.="\$currentState.html(\"switch to Shopping\");";
-$script.="}else{";
-$script.="\$currentState.attr(\"class\", \"ShoppingList\");";
-$script.="\$currentState.html(\"switch to Todo\");";
-$script.="}";
-
-$script.="});";
-
-$script.="});";
-$script.="</script>";
-
+$toggler = "<script href=\"js/toggler.js\" type=\"text/javascript\"></script>";
 //new script
-$script.="<script>";
-$script.="function confirmDelete(delUrl) {";
-$script.="  if (confirm(\"Are you sure you want to delete\")) {";
-$script.="    document.location = delUrl;";
-$script.="  }";
-$script.="}";
-$script.="</script>";
+$confirm="<script type=\"text/javascript\" href=\"js/confirm.js\">";
+$script = $toggler.$confirm;
 
 
 $intro.=$script;
