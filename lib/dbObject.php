@@ -1,36 +1,35 @@
 <?php
 /**
- *dbObject class is a class from which database-based objects derive 
+ * Utility class for working with 
+ * database connections and values
  */
 require_once('config.php');
 Class  dbObject{
         
         /**
-         *
          * @var int
          */
 	
-        protected static $errors;
+    protected static $errors;
 
 	//common database class vars
-	public static 	$table_name;
+	public static 	    $table_name;
+
 	protected static 	$db_fields = array();
-
-
-
-
-
 
 	//COMMON DATABASE METHODS
 	protected static function attributes(){
-                global $logger;
-                $logger->log(0,get_called_class()."::attributes()", "got here!");
+        global $logger;
+        $logger->log(0,get_called_class()."::attributes()", "got here!");
 		$attributes = array();
-		foreach(static::$db_fields as $field){
-                    $logger->log(0,get_called_class()."::attributes()", "foreach db_fields...field = {$field}");
-			if(property_exists(get_called_class(), $field)){
-                            $logger->log(0,get_called_class()."::attributes()", "assigning value ".$attributes[$field]." to field  {$field}");
-				$attributes[$field] = $field;
+        
+        foreach(static::$db_fields as $field){
+            $logger->log(0,get_called_class()."::attributes()", "foreach db_fields...field = {$field}");
+            if(property_exists(get_called_class(), $field)){
+                $logger->log(0,get_called_class()."::attributes()", 
+                    "assigning value ".$attributes[$field]
+                        ." to field  {$field}");
+			    $attributes[$field] = $field;
 			}
 		}
 
@@ -39,12 +38,13 @@ Class  dbObject{
 
 	protected static function sanitized_attributes(){
 		global $database;
-		$clean_attributes = array();
-		//doen't alter actual attribute value
-		foreach($this->attributes() as $key => $value){
-			$clean_attributes[$key] = $database->escape_value($value);
-		}
-		return $clean_attributes;
+		$clean = array_walk($clean, $sanAttr);
+
+        //don't alter actual attribute value
+        $sanAttr = function(&$v, $k){
+			$v = $database->escape_value($v);
+        };
+		return $clean;
 	}
 
 
