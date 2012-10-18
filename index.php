@@ -40,6 +40,7 @@ $now = array(
 
 
 $header = "<html><head>";
+
 $header.="<script src=\"http://code.jquery.com/jquery-latest.js\"></script>";
 $header.="<link rel=\"stylesheet\" type=\"text/css\" href=\"stylesheets/main.css\">";
 $header.="</head>";
