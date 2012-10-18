@@ -8,29 +8,22 @@ if(isset($_POST['submit'])){
 	SubmitHandler::process($_POST);
 }
 
-
 $result = false;
 
 if(isset($_GET['ShoppingList'])){
 	//then this is a shopping list edit
 	$item = ShoppingList::findById($_GET['ShoppingList']);
 	if($item){
-//		krumo($item);
-		$form = Form::editForm("index.php", FORMS_PATH.DS.'formInput.yaml', "ShoppingList", $item);
+        $form = Form::editForm(
+            "index.php", FORMS_PATH.DS.'formInput.yaml', "ShoppingList", $item);
 	}
 }elseif(isset($_GET['TodoList'])){
 	$item = TodoList::findById($_GET['TodoList']);
 	if($item){
-		$form = Form::editForm("index.php", FORMS_PATH.DS.'todoInputs.yaml', "TodoList", $item);
+        $form = Form::editForm(
+            "index.php", FORMS_PATH.DS.'todoInputs.yaml', "TodoList", $item);
 	}
 }
-
-
-
-
-
-
-
 
 $now=time();
 $now = array(
@@ -38,36 +31,31 @@ $now = array(
 			'time'=>strftime("%H:%M",$now)
 );
 
-
 $header = "<html><head>";
-
-$header.="<script src=\"http://code.jquery.com/jquery-latest.js\"></script>";
-$header.="<link rel=\"stylesheet\" type=\"text/css\" href=\"stylesheets/main.css\">";
-$header.="</head>";
-$header.="<body>";
+$header.= "<script src=\"http://code.jquery.com/jquery-latest.js\"></script>";
+$header.= "<link rel=\"stylesheet\" type=\"text/css\" href=\"stylesheets/main.css\">";
+$header.= "</head>";
+$header.= "<body>";
 
 $formInput = FORMS_PATH.DS."formInput.yaml";
 $form = !isset($form) ? new Form("index.php", $formInput, "ShoppingList") : $form;
 
 
 
-$intro="<section id=\"intro\">";
-$intro .="<button id=\"toggle\" class=\"ShoppingList\" type=\"button\" >switch to TODOs</button>";
+$intro   ="<section id=\"intro\">";
+$intro  .="<button id=\"toggle\" class=\"ShoppingList\" type=\"button\" >switch to TODOs</button>";
 
-$intro.="<div id=\"mutableForm\">";
-$intro.=$form->toString();
-$intro.="</div>";
+$intro  .="<div id=\"mutableForm\">";
+$intro  .=$form->toString();
+$intro  .="</div>";
 
-$toggler = "<script href=\"js/toggler.js\" type=\"text/javascript\"></script>";
-//new script
-$confirm="<script type=\"text/javascript\" href=\"js/confirm.js\">";
-$script = $toggler.$confirm;
+$toggler    = "<script href=\"js/toggler.js\" type=\"text/javascript\"></script>";
+$confirm    = "<script href=\"js/confirm.js\" type=\"text/javascript\"></script>";
+$script     = $toggler.$confirm;
 
-
-$intro.=$script;
-$intro.="<a href=\"printme.php\">printable</a>";
-
-$intro.="</section>";// id=\"intro\">";
+$intro  .=$script;
+$intro  .="<a href=\"printme.php\">printable</a>";
+$intro  .="</section>";// id=\"intro\">";
 
 //----------------------intro done
 
@@ -78,13 +66,12 @@ $content.="<div id=\"content_left\">";
 
 
 $shoppingList = Lists::parseGroceryList(Lists::getList("ShoppingList"));
-//echo "\$shoppingList\n";
-//krumo($shoppingList);
-$list = "<div id=\"grocery_list\">";
-$list.="<h3>Shopping</h3>";
 
-$list.= ListView::RenderShoppingList($shoppingList);
-$list.="</div>";
+$list    = "<div id=\"grocery_list\">";
+$list   .="<h3>Shopping</h3>";
+
+$list   .= ListView::RenderShoppingList($shoppingList);
+$list   .="</div>";
 
 $content.=$list."</div>";
 
