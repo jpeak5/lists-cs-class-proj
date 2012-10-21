@@ -1,5 +1,5 @@
 /nbproject/private/
-output/log.txt
+output/*
 *.shtml
 cgi-bin/
 500.php
