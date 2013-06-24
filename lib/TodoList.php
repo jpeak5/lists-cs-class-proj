@@ -10,5 +10,9 @@ class TodoList extends ListItem{
 	public $deadline;
 	public $duration;
 	public $timestamp;
+
+    public function toHTML() {
+        
+    }
 }
 ?>

@@ -27,8 +27,8 @@ class Logger{
 		//formulate the information into a string
 		$entry = $time." | ".$severity." | [".$component."] | ".$message."\n";
 
-		if($handle = fopen(LOG_FILE, "a+")){
-				
+		if(($handle = fopen(LOG_FILE, "a+"))!==false){
+                    assert($handle !==false);
 			//write the info
 			fwrite($handle, $entry);
 			//close the file
@@ -36,7 +36,7 @@ class Logger{
 			return true;
 		}
 		else{
-		die("couldn't open the file!");
+                    die("couldn't open the file!");
 		}
 	}
 

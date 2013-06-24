@@ -3,12 +3,16 @@
 require_once('config.php');
 //http://www.zacharyfox.com/blog/php/simple-model-crud-with-php-5-3
 
+Interface HTMLizable {
+    public function toHTML();
+}
+
 /**
  * Base class for all models
  *
  * @author Zachary Fox
  */
-abstract class ListItem {
+abstract class ListItem implements HTMLizable{
 
     /**
      * Pass properties to construct
@@ -20,10 +24,6 @@ abstract class ListItem {
     protected function __construct(Array $properties) {
         $reflect = new ReflectionObject($this);
         foreach ($reflect->getProperties() as $property) {
-            //if (!array_key_exists($property->name, $properties)) {
-            //throw new Exception("Unable to create object. Missing property: {$property->name}");
-            //}
-
             $this->{$property->name} = $properties[$property->name];
         }
     }
@@ -188,5 +188,7 @@ abstract class ListItem {
         $list = Lists::getList(get_called_class());
         return !empty($list) ? $list : false;
     }
+    
+    
 
 }

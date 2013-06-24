@@ -8,7 +8,7 @@ $result = false;
 
 if(isset($_GET['ShoppingList'])){
 	//then this is a shopping list deletion
-	$result = ShoppingList::delete($_GET['ShoppingList']);
+	$result = ShoppingListItem::delete($_GET['ShoppingList']);
 }elseif(isset($_GET['TodoList'])){
 	//then this is a todo list deletion
 	$result = TodoList::delete($_GET['TodoList']);

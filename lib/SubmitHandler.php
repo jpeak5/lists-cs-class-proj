@@ -3,8 +3,7 @@ require_once('config.php');
 
 class SubmitHandler {
 
-	
-	
+
 	public static function process($post){
 		global $logger;
 		

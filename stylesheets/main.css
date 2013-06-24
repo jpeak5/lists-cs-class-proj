@@ -25,9 +25,9 @@ body {
 	margin: 0 auto;
 	width: 940px;
 	font: 13px/ 22px Helvetica, Arial, sans-serif;
-	background: #299155;
+	background: #727F7D;
 	padding: 10px;
-	color:#231A18;
+	color:#B6CCC9;
 }
 
 h2 {
@@ -47,11 +47,14 @@ p {
 }
 
 a:link {
-	color:#231A18;
+	color:#B5FFF3;
 	} 
+a:.visited {
+    color:#B5FFF3;
+}
 a.deleteme:link{
-	color:#BFB8A3;
-	background-color:#593D36;
+	color:#097F6D;
+	background-color:#E3FFFB;
 	}
 #content {
 	display: table;
@@ -100,5 +103,5 @@ li {
 	padding-left: 20px;
 	padding-right: 20px;
 	font-size: 10px;
-	color: #8C6F5E;
+	color: #B6CCC9;
 }

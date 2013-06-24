@@ -36,12 +36,15 @@ class Database {
         $this->magic_quotes_active = get_magic_quotes_gpc();
         $this->my_sql_real_escape_string_exists = function_exists("my_sql_real_escape_string");
         $logger->log(0, get_called_class() . "->__contruct()", "opening connection...");
+        assert(get_class($logger)=='logger');
+        assert(is_object($logger));
     }
 
     public function open_connection() {
         global $logger;
+
         //1. create a db connection (AKA handle)
-        $logger->log(0, get_called_class() . "->open_connection()", "trying connection..." . DB_SERVER . ":" . DB_NAME);
+//        $logger->log(0, get_called_class() . "->open_connection()", "trying connection..." . DB_SERVER . ":" . DB_NAME);
 //        $logger->log(0, get_called_class() . "->open_connection()", "trying connection...");
         $this->connection = mysql_connect(DB_SERVER, DB_USER, DB_PASS);
         if (!$this->connection) {
@@ -54,7 +57,7 @@ class Database {
                 $logger->log(10, get_called_class() . "->open_connection()", "mysql_select_db() failed");
                 die("database selection failed: " . mysql_error());
             }
-            $logger->log(0, get_called_class() . "->open_connection()", "connect success!!");
+            $logger->log(0, get_called_class()           . "->open_connection()", "connect success!!");
         }
     }
 

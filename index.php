@@ -12,7 +12,7 @@ $result = false;
 
 if(isset($_GET['ShoppingList'])){
 	//then this is a shopping list edit
-	$item = ShoppingList::findById($_GET['ShoppingList']);
+	$item = ShoppingListItem::findById($_GET['ShoppingList']);
 	if($item){
         $form = Form::editForm(
             "index.php", FORMS_PATH.DS.'formInput.yaml', "ShoppingList", $item);
@@ -70,22 +70,22 @@ $shoppingList = Lists::parseGroceryList(Lists::getList("ShoppingList"));
 $list    = "<div id=\"grocery_list\">";
 $list   .="<h3>Shopping</h3>";
 
-$list   .= ListView::RenderShoppingList($shoppingList);
+$list   .= ListView::RenderList($shoppingList);
 $list   .="</div>";
 
 $content.=$list."</div>";
 
-$content.="<div id=\"content_right\">";
+//$content.="<div id=\"content_right\">";
 
-$todoList = Lists::parseTodoList(Lists::getList("TodoList"));
+//$todoList = Lists::parseTodoList(Lists::getList("TodoList"));
 //krumo($todoList);
-$list= "<div id=\"todo_list\">";
-$list.="<h3>TODOs</h3>";
+//$list= "<div id=\"todo_list\">";
+//$list.="<h3>TODOs</h3>";
+//
+//$list.= ListView::RenderTodoList($todoList);
+//$list.="</div>";
 
-$list.= ListView::RenderTodoList($todoList);
-$list.="</div>";
-
-$content.=$list."</div>";
+//$content.=$list."</div>";
 $content.= "</div>";// id=\"content\">";
 
 //NEXT STEPS...
